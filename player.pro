@@ -39,3 +39,8 @@ INSTALLS += target
 
 RESOURCES += \
     Icon.qrc
+
+DISTFILES += \
+    CONFIG.db \
+    logs.txt \
+    sun_spots.txt

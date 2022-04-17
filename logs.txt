@@ -1,0 +1,58 @@
+
+2022-04-15 22:09:58.240  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-15 22:09:58.242  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-15 22:09:58.243  player.cpp -- load_states  339  open database successfully!
+2022-04-15 22:09:58.244  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHgAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjgAAAAAB/////wEAAAABAA==
+2022-04-15 22:10:03.066  functions.cpp -- update_database()  359  database open successfully
+2022-04-15 22:10:03.067  functions.cpp -- update_database()  389  updated!
+2022-04-15 22:10:03.068  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-15 22:10:03.069  functions.cpp -- update_database()  359  database open successfully
+2022-04-15 22:10:03.070  functions.cpp -- update_database()  389  updated!
+2022-04-15 22:11:43.501  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-15 22:11:43.502  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-15 22:11:43.504  player.cpp -- load_states  339  open database successfully!
+2022-04-15 22:11:43.505  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHgAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjgAAAAAB/////wEAAAABAA==
+2022-04-15 22:12:07.307  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-15 22:12:07.308  functions.cpp  151  find available subtitle!
+2022-04-15 22:12:07.310  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-15 22:12:07.312  functions.cpp  151  find available subtitle!
+2022-04-15 22:12:44.491  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/2-blender基本操作介绍.vtt
+2022-04-15 22:12:44.492  functions.cpp  151  find available subtitle!
+2022-04-15 22:12:44.530  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/2-blender基本操作介绍.vtt
+2022-04-15 22:12:44.531  functions.cpp  151  find available subtitle!
+2022-04-15 22:12:52.207  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-15 22:12:52.211  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-15 22:12:52.212  player.cpp -- load_states  339  open database successfully!
+2022-04-15 22:12:52.213  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHgAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjgAAAAAB/////wEAAAABAA==
+2022-04-15 22:12:58.337  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-15 22:12:58.338  functions.cpp  151  find available subtitle!
+2022-04-15 22:12:58.342  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-15 22:12:58.342  functions.cpp  151  find available subtitle!
+2022-04-15 22:13:06.693  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/2-blender基本操作介绍.vtt
+2022-04-15 22:13:06.694  functions.cpp  151  find available subtitle!
+2022-04-15 22:13:06.720  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/2-blender基本操作介绍.vtt
+2022-04-15 22:13:06.721  functions.cpp  151  find available subtitle!
+2022-04-15 22:13:12.285  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/3-blender动画面板与工具讲解.vtt
+2022-04-15 22:13:12.286  functions.cpp  151  find available subtitle!
+2022-04-15 22:13:12.337  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/3-blender动画面板与工具讲解.vtt
+2022-04-15 22:13:12.338  functions.cpp  151  find available subtitle!
+2022-04-15 22:15:29.637  functions.cpp -- update_database()  359  database open successfully
+2022-04-15 22:15:29.638  functions.cpp -- update_database()  389  updated!
+2022-04-15 22:15:29.639  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-15 22:15:29.640  functions.cpp -- update_database()  359  database open successfully
+2022-04-15 22:15:29.663  functions.cpp -- update_database()  389  updated!
+2022-04-16 13:20:26.230  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-16 13:20:26.231  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-16 13:20:26.232  player.cpp -- load_states  339  open database successfully!
+2022-04-16 13:20:26.233  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAAB1gAAAEcB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjgAAAAAB/////wEAAAABAA==
+2022-04-16 13:20:41.491  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-16 13:20:41.491  functions.cpp  151  find available subtitle!
+2022-04-16 13:20:45.959  functions.cpp  145  C:/Users/riben/Videos/Justin_Bieber.vtt
+2022-04-16 13:20:45.959  functions.cpp  156  subtitle file not exist
+2022-04-16 13:20:45.960  functions.cpp  145  C:/Users/riben/Videos/Justin_Bieber.vtt
+2022-04-16 13:20:45.960  functions.cpp  156  subtitle file not exist
+2022-04-16 13:22:32.277  functions.cpp -- update_database()  359  database open successfully
+2022-04-16 13:22:32.280  functions.cpp -- update_database()  389  updated!
+2022-04-16 13:22:32.281  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-16 13:22:32.282  functions.cpp -- update_database()  359  database open successfully
+2022-04-16 13:22:32.282  functions.cpp -- update_database()  389  updated!
