@@ -23,7 +23,6 @@ std::string zfill(std::string s, int n, char c){
     }
 }
 
-
 QString change_position_into_time(long position){
     // position is a long number with millisecond unit
     return QString::fromStdString(zfill(std::to_string(long(long(long(position / 1000) / 60) / 60)), 2, '0')
