@@ -1,0 +1,14 @@
+
+2022-04-17 19:24:41.009  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-17 19:24:41.011  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-17 19:24:41.012  player.cpp -- load_states  339  open database successfully!
+2022-04-17 19:24:41.013  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADHwAAAG8B/////wEAAAABAA==
+2022-04-17 19:24:49.912  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/2-blender基本操作介绍.vtt
+2022-04-17 19:24:49.913  functions.cpp  151  find available subtitle!
+2022-04-17 19:24:49.945  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/2-blender基本操作介绍.vtt
+2022-04-17 19:24:49.946  functions.cpp  151  find available subtitle!
+2022-04-17 19:25:38.222  functions.cpp -- update_database()  359  database open successfully
+2022-04-17 19:25:38.237  functions.cpp -- update_database()  389  updated!
+2022-04-17 19:25:38.237  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-17 19:25:38.248  functions.cpp -- update_database()  359  database open successfully
+2022-04-17 19:25:38.257  functions.cpp -- update_database()  389  updated!
