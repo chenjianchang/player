@@ -42,5 +42,6 @@ RESOURCES += \
 
 DISTFILES += \
     CONFIG.db \
+    README.md \
     logs.txt \
     sun_spots.txt
