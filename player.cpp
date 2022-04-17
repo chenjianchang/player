@@ -310,7 +310,6 @@ Player::Player(QWidget *parent)
 
     // load states
     load_states();
-
 }
 
 void Player::load_states(){
@@ -452,7 +451,7 @@ void Player::open()
     if (fileDialog.exec() == QDialog::Accepted)
         addToPlaylist(fileDialog.selectedUrls());
 
-generate_subtitle(fileDialog.selectedUrls()[0].toLocalFile(), m_subtitle_stringlist_primary, m_subtitle_stringlist_adjusted, m_subtitle_moment_time_list, m_subtitle_moment_content_list);
+    generate_subtitle(fileDialog.selectedUrls()[0].toLocalFile(), m_subtitle_stringlist_primary, m_subtitle_stringlist_adjusted, m_subtitle_moment_time_list, m_subtitle_moment_content_list);
 
 }
 
@@ -845,7 +844,6 @@ void Player::closeEvent(QCloseEvent *event){    // edited by shaolang
     delete m_timeline_window;
     delete m_editor_window;
     delete m_help_window;
-
 
 }
 
