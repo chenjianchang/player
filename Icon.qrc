@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icon/default.svg</file>
+        <file>Icon/player.png</file>
+        <file>Icon/subtitle_editor.png</file>
+        <file>Icon/timeline_editor.png</file>
+    </qresource>
+</RCC>
