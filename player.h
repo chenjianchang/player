@@ -91,7 +91,7 @@ public:
     void addToPlaylist(const QList<QUrl> &urls);
     void closeEvent(QCloseEvent *event);   // edited by shaolang
     void load_location();   // edited by shaolang
-    void load_states();   // edited by shaolang
+    void load_spiltter_states();   // edited by shaolang
 
 signals:
     void fullScreenChanged(bool fullScreen);

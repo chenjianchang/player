@@ -43,3 +43,30 @@
 2022-04-17 20:48:53.384  player.cpp -- Player::closeEvent  775  update database successfully!
 2022-04-17 20:48:53.385  functions.cpp -- update_database()  359  database open successfully
 2022-04-17 20:48:53.386  functions.cpp -- update_database()  389  updated!
+2022-04-18 11:34:11.371  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 11:34:11.373  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 11:34:11.375  player.cpp -- load_states  339  open database successfully!
+2022-04-18 11:34:11.376  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHgAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 11:34:20.954  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-18 11:34:20.955  functions.cpp  151  find available subtitle!
+2022-04-18 11:34:20.970  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-18 11:34:20.970  functions.cpp  151  find available subtitle!
+2022-04-18 11:34:44.701  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/2-blender基本操作介绍.vtt
+2022-04-18 11:34:44.702  functions.cpp  151  find available subtitle!
+2022-04-18 11:34:44.715  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/2-blender基本操作介绍.vtt
+2022-04-18 11:34:44.716  functions.cpp  151  find available subtitle!
+2022-04-18 11:34:50.382  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-18 11:34:50.382  functions.cpp  151  find available subtitle!
+2022-04-18 11:35:07.929  functions.cpp  145  vtt
+2022-04-18 11:35:07.930  functions.cpp  156  subtitle file not exist
+2022-04-18 11:35:30.957  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-18 11:35:30.957  functions.cpp  151  find available subtitle!
+2022-04-18 11:35:36.229  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/2-blender基本操作介绍.vtt
+2022-04-18 11:35:36.238  functions.cpp  151  find available subtitle!
+2022-04-18 11:35:40.064  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-18 11:35:40.065  functions.cpp  151  find available subtitle!
+2022-04-18 11:36:59.360  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 11:36:59.367  functions.cpp -- update_database()  389  updated!
+2022-04-18 11:36:59.368  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 11:36:59.369  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 11:36:59.382  functions.cpp -- update_database()  389  updated!

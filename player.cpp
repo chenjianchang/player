@@ -309,10 +309,10 @@ Player::Player(QWidget *parent)
     load_location();
 
     // load states
-    load_states();
+    load_spiltter_states();
 }
 
-void Player::load_states(){
+void Player::load_spiltter_states(){
 
     QString  m_subtitle_splitter_state_ = "";
     QString m_playlist_splitter_state_ = "";
