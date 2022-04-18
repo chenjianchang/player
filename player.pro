@@ -40,8 +40,4 @@ INSTALLS += target
 RESOURCES += \
     Icon.qrc
 
-DISTFILES += \
-    CONFIG.db \
-    README.md \
-    logs.txt \
-    sun_spots.txt
+

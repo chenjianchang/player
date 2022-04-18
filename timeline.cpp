@@ -17,7 +17,7 @@ timeline::timeline(){
 
     series = new QLineSeries();
 
-    QFile sunSpots("C:/Users/riben/Desktop/player/sun_spots.txt");
+    QFile sunSpots("C:/Users/riben/Desktop/player/doc/sun_spots.txt");
 
     if (!sunSpots.open(QIODevice::ReadOnly | QIODevice::Text)) {
 

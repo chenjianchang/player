@@ -327,7 +327,7 @@ void Player::load_spiltter_states(){
     else
     {
         db = QSqlDatabase::addDatabase("QSQLITE");
-        db.setDatabaseName("C:/Users/riben/Desktop/player/CONFIG.db");
+        db.setDatabaseName("C:/Users/riben/Desktop/player/doc/CONFIG.db");
     }
     // judge weather database is open
     if(!db.open())
@@ -381,7 +381,7 @@ void Player::load_location()
     else
     {
         db = QSqlDatabase::addDatabase("QSQLITE");
-        db.setDatabaseName("C:/Users/riben/Desktop/player/CONFIG.db");
+        db.setDatabaseName("C:/Users/riben/Desktop/player/doc/CONFIG.db");
     }
     // judge weather database is open
     if(!db.open())

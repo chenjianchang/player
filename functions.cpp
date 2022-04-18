@@ -116,7 +116,7 @@ void write_logs(QString filename, QString row, QString content){
     temp.append(row.toUtf8());
     temp.append("  ");
     temp.append(content.toUtf8());
-    QFile logs("C:/Users/riben/Desktop/player/logs.txt");
+    QFile logs("C:/Users/riben/Desktop/player/doc/logs.txt");
     if (!logs.open(QIODevice::Append | QIODevice::Text))
              return;
     logs.write("\n");
@@ -345,7 +345,7 @@ void update_database(QString table, QList<qint16> coordinates){
         else
         {
             db = QSqlDatabase::addDatabase("QSQLITE");
-            db.setDatabaseName("C:/Users/riben/Desktop/player/CONFIG.db");
+            db.setDatabaseName("C:/Users/riben/Desktop/player/doc/CONFIG.db");
         }
         // judge weather database is open
         if(!db.open())
@@ -406,7 +406,7 @@ void update_database(QString table, QList<QString> states){
         else
         {
             db = QSqlDatabase::addDatabase("QSQLITE");
-            db.setDatabaseName("C:/Users/riben/Desktop/player/CONFIG.db");
+            db.setDatabaseName("C:/Users/riben/Desktop/player/doc/CONFIG.db");
         }
         // judge weather database is open
         if(!db.open())
