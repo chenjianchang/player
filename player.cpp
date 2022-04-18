@@ -96,6 +96,9 @@ Player::Player(QWidget *parent)
     m_videoWidget->resize(1280, 720);
     m_player->setVideoOutput(m_videoWidget);
 
+//    // add cover picture
+//    m_player->setSource(QUrl(""));
+
     m_playlistModel = new PlaylistModel(this);
     m_playlist = m_playlistModel->playlist();
 
