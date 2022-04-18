@@ -10,6 +10,15 @@
 #include <QtCharts/QDateTimeAxis>
 #include <QtCharts/QValueAxis>
 #include <QBoxLayout>
+#include <QPainter>
+#include <QScrollArea>
+#include <QLineEdit>
+#include <QToolButton>
+#include <QSpacerItem>
+#include <QLayout>
+#include <QLabel>
+#include <QComboBox>
+
 
 
 class timeline: public QWidget
@@ -25,6 +34,14 @@ public:
     QDateTimeAxis *axisX = nullptr;
     QValueAxis *axisY = nullptr;
     QBoxLayout *layout = nullptr;
+    QScrollArea *audio_picture_area = nullptr;
+    QLineEdit *current_moment = nullptr;
+    QSpacerItem *spacer = nullptr;
+    QLabel *zoom = nullptr;
+    QComboBox *zoom_box = nullptr;
+    QHBoxLayout *h_layout = nullptr;
+    QVBoxLayout *v_layout = nullptr;
+
 
 signals:
 

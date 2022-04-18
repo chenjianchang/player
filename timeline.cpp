@@ -6,7 +6,7 @@
 #include <QtCore/QFile>
 #include <QtCore/QTextStream>
 #include <QString>
-
+#include <QStringList>
 
 
 timeline::timeline(){
@@ -14,6 +14,37 @@ timeline::timeline(){
     this->setWindowTitle(tr("timeline"));
     this->setWindowIcon(QIcon(":/Icon/timeline_editor.png"));
     this->hide();
+
+    // create UI
+    current_moment = new QLineEdit(this);
+    current_moment->setAlignment(Qt::AlignCenter);
+    spacer = new QSpacerItem(10,10, QSizePolicy::Expanding);
+    zoom = new QLabel(tr("Zoom:"));
+    zoom_box = new QComboBox();
+    zoom_box->addItem("0.5");
+    zoom_box->addItem("1");
+    zoom_box->addItem("2");
+    zoom_box->addItem("3");
+    zoom_box->addItem("4");
+
+    audio_picture_area = new QScrollArea(this);
+
+    h_layout = new QHBoxLayout;
+    v_layout = new QVBoxLayout;
+    h_layout->addWidget(current_moment);
+    h_layout->addSpacerItem(spacer);
+    h_layout->addWidget(zoom);
+    h_layout->addWidget(zoom_box);
+
+    v_layout->addLayout(h_layout);
+    v_layout->addWidget(audio_picture_area);
+    this->setLayout(v_layout);
+
+
+
+//    audio_picture_area->setWidget(chartView);
+//    chartView->move(0,0);
+//    audio_picture_area->move(0,0);
 
     series = new QLineSeries();
 
@@ -44,7 +75,7 @@ timeline::timeline(){
 
     //![4]
     axisX = new QDateTimeAxis;
-    axisX->setTickCount(10);
+    axisX->setTickCount(20);
     axisX->setFormat("MMM yyyy");
     axisX->setTitleText("Date");
     chart->addAxis(axisX, Qt::AlignBottom);
@@ -56,16 +87,21 @@ timeline::timeline(){
     chart->addAxis(axisY, Qt::AlignLeft);
     series->attachAxis(axisY);
     //![4]
-
+    //!
     //![5]
 
     chartView = new QChartView(chart);
     chartView->setRenderHint(QPainter::Antialiasing);
-    chartView->show();
-    chartView->setParent(this);
-    layout = new QHBoxLayout;
-    layout->addWidget(chartView);
-    this->setLayout(layout);
+    chartView->resize(60000,200);
+
+
+
+
+
+
+//    layout = new QHBoxLayout;
+//    layout->addWidget(chartView);
+//    this->setLayout(layout);
 
 
 
