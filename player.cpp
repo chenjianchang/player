@@ -833,13 +833,13 @@ void Player::closeEvent(QCloseEvent *event){    // edited by shaolang
     update_database("UI_CONFIG", ui_configuration);
 
     write_logs("player.cpp -- Player::closeEvent", "775", "update database successfully!");
-    QList<QString> states;
+    QList<QString> splitter_states;
     QByteArray m_subtitle_splitter_state = m_subtitle_splitter->saveState();
     QByteArray m_playlist_splitter_state = m_playlist_splitter->saveState();
-    states.append(QString::fromUtf8(m_subtitle_splitter_state.toBase64()));
-    states.append(QString::fromUtf8(m_playlist_splitter_state.toBase64()));
+    splitter_states.append(QString::fromUtf8(m_subtitle_splitter_state.toBase64()));
+    splitter_states.append(QString::fromUtf8(m_playlist_splitter_state.toBase64()));
 
-    update_database("UI_CONFIG", states);
+    update_database("UI_CONFIG", splitter_states);
 
     // delete every other windows
     delete m_timeline_window;
