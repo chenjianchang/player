@@ -452,7 +452,7 @@ void Player::open()
     if (fileDialog.exec() == QDialog::Accepted)
         addToPlaylist(fileDialog.selectedUrls());
 
-    generate_subtitle(fileDialog.selectedUrls()[0].toLocalFile(), m_subtitle_stringlist_primary, m_subtitle_stringlist_adjusted, m_subtitle_moment_time_list, m_subtitle_moment_content_list);
+//    generate_subtitle(fileDialog.selectedUrls()[0].toLocalFile(), m_subtitle_stringlist_primary, m_subtitle_stringlist_adjusted, m_subtitle_moment_time_list, m_subtitle_moment_content_list);
 
 }
 
