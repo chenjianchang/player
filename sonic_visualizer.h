@@ -2,7 +2,8 @@
 #define SONIC_VISUALIZER_H
 
 #include <QWidget>
-#include <QSvgGenerator>
+#include <QSvgWidget>
+
 
 class sonic_visualizer:public QWidget
 {

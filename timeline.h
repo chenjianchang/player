@@ -19,6 +19,8 @@
 #include <QLabel>
 #include <QComboBox>
 #include <QPainter>
+
+
 #include "sonic_visualizer.h"
 
 
@@ -43,7 +45,6 @@ public:
     QHBoxLayout *h_layout = nullptr;
     QVBoxLayout *v_layout = nullptr;
     QPainter *p = nullptr;
-    sonic_visualizer *sonic_visualizer = nullptr;
 
 
 

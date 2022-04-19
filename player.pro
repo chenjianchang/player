@@ -8,7 +8,8 @@ QT += network \
       multimediawidgets \
       charts \
       sql \
-      svg
+      svg \
+      svgwidgets
 
 HEADERS = \
     editor.h \
