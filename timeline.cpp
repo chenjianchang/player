@@ -53,7 +53,7 @@ timeline::timeline(){
     v_layout->addWidget(sonic_panel_frame);
     this->setLayout(v_layout);
 
-
+    this->sonic_panel_frame->setAttribute(Qt::WA_TransparentForMouseEvents);  // set sonic_panel_frame mouse event
 }
 
 void timeline::resizeEvent(QResizeEvent *event){

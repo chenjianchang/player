@@ -78,3 +78,5 @@ void sonic_panel::resizeEvent(QResizeEvent *event){
 }
 
 
+
+

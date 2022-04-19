@@ -25,6 +25,7 @@ protected:
     void paintEvent(QPaintEvent *event) override;
     void resizeEvent(QResizeEvent *event) override;
 
+
 private:
     int w;   // this->width()
     int h;   // this->heigth()
