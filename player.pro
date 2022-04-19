@@ -7,7 +7,8 @@ QT += network \
       multimedia \
       multimediawidgets \
       charts \
-      sql
+      sql \
+      svg
 
 HEADERS = \
     editor.h \
@@ -16,6 +17,7 @@ HEADERS = \
     player.h \
     playercontrols.h \
     playlistmodel.h \
+    sonic_visualizer.h \
     timeline.h \
     videowidget.h \
     qmediaplaylist.h \
@@ -29,6 +31,7 @@ SOURCES = main.cpp \
     player.cpp \
     playercontrols.cpp \
     playlistmodel.cpp \
+    sonic_visualizer.cpp \
     timeline.cpp \
     videowidget.cpp \
     qmediaplaylist.cpp \

@@ -320,3 +320,318 @@
 2022-04-18 16:05:16.946  player.cpp -- Player::closeEvent  775  update database successfully!
 2022-04-18 16:05:16.947  functions.cpp -- update_database()  359  database open successfully
 2022-04-18 16:05:16.948  functions.cpp -- update_database()  389  updated!
+2022-04-18 17:58:21.015  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 17:58:21.016  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 17:58:21.018  player.cpp -- load_states  339  open database successfully!
+2022-04-18 17:58:21.019  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 17:58:49.735  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 17:58:49.737  functions.cpp -- update_database()  389  updated!
+2022-04-18 17:58:49.738  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 17:58:49.740  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 17:58:49.741  functions.cpp -- update_database()  389  updated!
+2022-04-18 17:59:39.295  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 17:59:39.295  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 17:59:39.295  player.cpp -- load_states  339  open database successfully!
+2022-04-18 17:59:39.295  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:00:48.600  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:00:48.624  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:00:48.625  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:00:48.636  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:00:48.637  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:04:33.652  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:04:33.653  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:04:33.655  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:04:33.655  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:04:43.933  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:04:43.934  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:04:43.936  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:04:43.937  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:04:43.938  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:08:48.299  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:08:48.300  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:08:48.300  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:08:48.301  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:08:57.532  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:08:57.534  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:08:57.534  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:08:57.536  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:08:57.537  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:09:26.671  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:09:26.674  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:09:26.675  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:09:26.677  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:09:37.525  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:09:37.527  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:09:37.528  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:09:37.529  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:09:37.530  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:13:19.696  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:13:19.697  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:13:19.697  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:13:19.697  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:13:36.190  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:13:36.192  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:13:36.193  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:13:36.194  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:13:36.195  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:13:56.154  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:13:56.156  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:13:56.157  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:13:56.158  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:14:12.604  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:14:12.606  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:14:12.607  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:14:12.609  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:14:12.610  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:14:50.789  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:14:50.791  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:14:50.792  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:14:50.793  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:15:13.279  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:15:13.302  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:15:13.303  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:15:13.314  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:15:13.315  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:15:38.708  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:15:38.711  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:15:38.711  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:15:38.711  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:16:15.238  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:16:15.258  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:16:15.260  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:16:15.271  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:16:15.273  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:16:19.769  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:16:19.769  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:16:19.782  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:16:19.783  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:16:34.369  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:16:34.371  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:16:34.372  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:16:34.373  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:16:34.374  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:18:17.284  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:18:17.285  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:18:17.286  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:18:17.287  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:19:03.045  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:19:03.054  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:19:03.055  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:19:03.063  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:19:03.064  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:21:49.949  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:21:49.951  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:21:49.951  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:21:49.951  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:22:19.181  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:22:19.183  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:22:19.184  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:22:19.186  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:22:19.187  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:23:56.972  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:23:56.973  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:23:56.973  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:23:56.973  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:24:22.446  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:24:22.475  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:24:22.477  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:24:22.497  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:24:22.499  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:26:01.631  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:26:01.632  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:26:01.633  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:26:01.634  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:26:13.495  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:26:13.497  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:26:13.498  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:26:13.499  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:26:13.500  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:29:51.570  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:29:51.571  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:29:51.571  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:29:51.573  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:30:06.258  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:30:06.259  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:30:06.260  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:30:06.261  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:30:06.262  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:31:03.927  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:31:03.927  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:31:03.938  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:31:03.940  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:31:14.262  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:31:14.264  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:31:14.265  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:31:14.266  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:31:14.267  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:31:59.616  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:31:59.622  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:31:59.624  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:31:59.625  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:32:30.708  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:32:30.732  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:32:30.732  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:32:30.743  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:32:30.744  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:33:09.377  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:33:09.379  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:33:09.379  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:33:09.379  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:33:25.301  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:33:25.303  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:33:25.303  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:33:25.305  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:33:25.306  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:33:55.781  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:33:55.792  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:33:55.794  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:33:55.795  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:34:28.991  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:34:28.992  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:34:28.993  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:34:28.995  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:34:28.996  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:35:15.502  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:35:15.503  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:35:15.504  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:35:15.505  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:35:44.855  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:35:44.856  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:35:44.857  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:35:44.858  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:35:44.860  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:37:54.119  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:37:54.120  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:37:54.122  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:37:54.123  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:37:59.338  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:37:59.340  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:37:59.341  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:37:59.343  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:37:59.344  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:38:38.427  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:38:38.428  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:38:38.429  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:38:38.429  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:39:07.596  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:39:07.616  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:39:07.618  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:39:07.636  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:39:07.637  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:39:44.861  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:39:44.862  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:39:44.863  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:39:44.864  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:40:16.386  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:40:16.410  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:40:16.411  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:40:16.423  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:40:16.424  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:44:27.546  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:44:27.547  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:44:27.548  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:44:27.548  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:45:52.882  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:45:52.883  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:45:52.884  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:45:52.886  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:45:52.887  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:46:07.733  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:46:07.734  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:46:07.735  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:46:07.736  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:46:32.526  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:46:32.528  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:46:32.529  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:46:32.530  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:46:32.531  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:49:23.078  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:49:23.079  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:49:23.080  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:49:23.081  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:49:26.133  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:49:26.135  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:49:26.135  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:49:26.137  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:49:26.138  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:49:49.175  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:49:49.176  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:49:49.176  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:49:49.176  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:49:55.992  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:49:55.994  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:49:55.994  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:49:55.996  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:49:55.997  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:52:15.810  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:52:15.812  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:52:15.814  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:52:15.816  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:52:38.676  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:52:38.677  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:52:38.677  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:52:38.679  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:52:38.680  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:53:01.198  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:53:01.198  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:53:01.198  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:53:01.209  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:54:20.449  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:54:20.450  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:54:20.451  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:54:20.452  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:54:20.453  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:54:30.551  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:54:30.551  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:54:30.568  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:54:30.569  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:54:40.875  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:54:40.876  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:54:40.877  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:54:40.878  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:54:40.879  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:55:28.141  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:55:28.142  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:55:28.144  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:55:28.145  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:56:01.969  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:56:01.978  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:56:01.979  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:56:01.998  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:56:01.999  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:58:29.722  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 18:58:29.723  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 18:58:29.726  player.cpp -- load_states  339  open database successfully!
+2022-04-18 18:58:29.727  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 18:58:53.313  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:58:53.314  functions.cpp -- update_database()  389  updated!
+2022-04-18 18:58:53.316  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 18:58:53.317  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 18:58:53.318  functions.cpp -- update_database()  389  updated!
+2022-04-18 19:15:26.257  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 19:15:26.258  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 19:15:26.259  player.cpp -- load_states  339  open database successfully!
+2022-04-18 19:15:26.259  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 19:16:15.040  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 19:16:15.042  functions.cpp -- update_database()  389  updated!
+2022-04-18 19:16:15.043  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 19:16:15.045  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 19:16:15.047  functions.cpp -- update_database()  389  updated!
+2022-04-18 19:19:13.484  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 19:19:13.485  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 19:19:13.487  player.cpp -- load_states  339  open database successfully!
+2022-04-18 19:19:13.488  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 19:19:23.985  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 19:19:23.986  functions.cpp -- update_database()  389  updated!
+2022-04-18 19:19:23.987  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 19:19:23.988  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 19:19:23.990  functions.cpp -- update_database()  389  updated!
+2022-04-18 19:22:22.747  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-18 19:22:22.748  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-18 19:22:22.749  player.cpp -- load_states  339  open database successfully!
+2022-04-18 19:22:22.750  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-18 19:22:59.831  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 19:22:59.854  functions.cpp -- update_database()  389  updated!
+2022-04-18 19:22:59.855  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-18 19:22:59.869  functions.cpp -- update_database()  359  database open successfully
+2022-04-18 19:22:59.871  functions.cpp -- update_database()  389  updated!

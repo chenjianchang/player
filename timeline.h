@@ -18,7 +18,8 @@
 #include <QLayout>
 #include <QLabel>
 #include <QComboBox>
-
+#include <QPainter>
+#include "sonic_visualizer.h"
 
 
 class timeline: public QWidget
@@ -31,7 +32,7 @@ public:
     QLineSeries *series = nullptr;
     QChartView *chartView = nullptr;
     QChart *chart = nullptr;
-    QDateTimeAxis *axisX = nullptr;
+    QValueAxis *axisX = nullptr;
     QValueAxis *axisY = nullptr;
     QBoxLayout *layout = nullptr;
     QScrollArea *audio_picture_area = nullptr;
@@ -41,6 +42,10 @@ public:
     QComboBox *zoom_box = nullptr;
     QHBoxLayout *h_layout = nullptr;
     QVBoxLayout *v_layout = nullptr;
+    QPainter *p = nullptr;
+    sonic_visualizer *sonic_visualizer = nullptr;
+
+
 
 
 signals:
