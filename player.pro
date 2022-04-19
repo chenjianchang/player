@@ -18,7 +18,8 @@ HEADERS = \
     player.h \
     playercontrols.h \
     playlistmodel.h \
-    sonic_visualizer.h \
+    sonic_panel.h \
+    sonic_waveform.h \
     timeline.h \
     videowidget.h \
     qmediaplaylist.h \
@@ -32,7 +33,8 @@ SOURCES = main.cpp \
     player.cpp \
     playercontrols.cpp \
     playlistmodel.cpp \
-    sonic_visualizer.cpp \
+    sonic_panel.cpp \
+    sonic_waveform.cpp \
     timeline.cpp \
     videowidget.cpp \
     qmediaplaylist.cpp \

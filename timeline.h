@@ -3,12 +3,6 @@
 
 #include <QObject>
 #include <QWidget>
-#include <QtCharts/QLineSeries>
-#include <QtCharts/QChartView>
-#include <QtCharts/QChart>
-#include <QtCore/QDateTime>
-#include <QtCharts/QDateTimeAxis>
-#include <QtCharts/QValueAxis>
 #include <QBoxLayout>
 #include <QPainter>
 #include <QLineEdit>
@@ -19,11 +13,13 @@
 #include <QComboBox>
 #include <QPainter>
 #include <QFrame>
-#include <QScrollBar>
+#include <QSvgWidget>
+#include <QGraphicsView>
 
 
 
-#include "sonic_visualizer.h"
+#include "sonic_panel.h"
+#include "sonic_waveform.h"
 
 
 class timeline: public QWidget
@@ -33,14 +29,8 @@ public:
     timeline();
     ~timeline()= default;
 
-    QLineSeries *series = nullptr;
-    QChartView *chartView = nullptr;
-    QChart *chart = nullptr;
-    QValueAxis *axisX = nullptr;
-    QValueAxis *axisY = nullptr;
+
     QBoxLayout *layout = nullptr;
-    QFrame *audio_picture_frame = nullptr;
-    QScrollBar *scrollbar = nullptr;
     QLineEdit *current_moment = nullptr;
     QSpacerItem *spacer = nullptr;
     QLabel *zoom = nullptr;
@@ -49,7 +39,12 @@ public:
     QVBoxLayout *v_layout = nullptr;
     QPainter *p = nullptr;
 
-    sonic_visualizer *view = nullptr;
+    sonic_panel *audio_picture_frame = nullptr;
+
+    sonic_waveform *audio_waveform_scene = nullptr;
+    QGraphicsView *audio_waveform_view = nullptr;
+
+    void resizeEvent(QResizeEvent *event);
 
 
 

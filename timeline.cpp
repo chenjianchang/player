@@ -32,13 +32,12 @@ timeline::timeline(){
     zoom_box->addItem("3");
     zoom_box->addItem("4");
 
-    audio_picture_frame = new sonic_visualizer();
+    audio_picture_frame = new sonic_panel();
 
-    scrollbar = new QScrollBar(Qt::Horizontal, audio_picture_frame);
-
-
-
-
+    audio_waveform_scene = new sonic_waveform();
+    audio_waveform_view = new QGraphicsView(audio_waveform_scene);
+    audio_waveform_view->setParent(this);
+    audio_waveform_view->show();
 
 
 
@@ -52,8 +51,16 @@ timeline::timeline(){
 
     v_layout->addLayout(h_layout);
     v_layout->addWidget(audio_picture_frame);
-    v_layout->addWidget(scrollbar);
     this->setLayout(v_layout);
+
+
+}
+
+void timeline::resizeEvent(QResizeEvent *event){
+    Q_UNUSED(event);
+    this->audio_waveform_view->resize(this->audio_picture_frame->width(), this->audio_picture_frame->height());
+    this->audio_waveform_view->move(this->audio_picture_frame->x(), this->audio_picture_frame->y());
+    this->audio_waveform_view->lower();
 
 }
 
