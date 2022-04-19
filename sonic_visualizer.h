@@ -23,7 +23,9 @@ protected:
     void resizeEvent(QResizeEvent *event) override;
 
 private:
-    int d;
+    int d;   // vertical distance for tick
+    QPainterPath path;
+    QPainterPath horizontal_tick;
 };
 
 
