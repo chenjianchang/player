@@ -32,10 +32,10 @@ timeline::timeline(){
     zoom_box->addItem("3");
     zoom_box->addItem("4");
 
-    audio_picture_frame = new sonic_panel();
+    sonic_panel_frame = new sonic_panel();
 
-    audio_waveform_scene = new sonic_waveform();
-    audio_waveform_view = new QGraphicsView(audio_waveform_scene);
+    sonic_waveform_scene = new sonic_waveform();
+    audio_waveform_view = new QGraphicsView(sonic_waveform_scene);
     audio_waveform_view->setParent(this);
     audio_waveform_view->show();
 
@@ -50,7 +50,7 @@ timeline::timeline(){
     h_layout->addWidget(zoom_box);
 
     v_layout->addLayout(h_layout);
-    v_layout->addWidget(audio_picture_frame);
+    v_layout->addWidget(sonic_panel_frame);
     this->setLayout(v_layout);
 
 
@@ -58,9 +58,11 @@ timeline::timeline(){
 
 void timeline::resizeEvent(QResizeEvent *event){
     Q_UNUSED(event);
-    this->audio_waveform_view->resize(this->audio_picture_frame->width(), this->audio_picture_frame->height());
-    this->audio_waveform_view->move(this->audio_picture_frame->x(), this->audio_picture_frame->y());
+    this->audio_waveform_view->resize(this->sonic_panel_frame->width(), this->sonic_panel_frame->height());
+    this->audio_waveform_view->move(this->sonic_panel_frame->x(), this->sonic_panel_frame->y());
     this->audio_waveform_view->lower();
+
+    qDebug() << "timeline:" << this->sonic_panel_frame->height();
 
 }
 

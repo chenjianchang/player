@@ -39,9 +39,9 @@ public:
     QVBoxLayout *v_layout = nullptr;
     QPainter *p = nullptr;
 
-    sonic_panel *audio_picture_frame = nullptr;
+    sonic_panel *sonic_panel_frame = nullptr;
 
-    sonic_waveform *audio_waveform_scene = nullptr;
+    sonic_waveform *sonic_waveform_scene = nullptr;
     QGraphicsView *audio_waveform_view = nullptr;
 
     void resizeEvent(QResizeEvent *event);
@@ -49,6 +49,7 @@ public:
 
 
 signals:
+
 
 public slots:
 
