@@ -8,6 +8,7 @@
 #include <QGraphicsScene>
 #include <QFrame>
 #include <QResizeEvent>
+#include <QSvgWidget>
 
 
 class sonic_visualizer:public QFrame
@@ -24,8 +25,9 @@ protected:
 
 private:
     int d;   // vertical distance for tick
-    QPainterPath path;
+    QPainterPath sonic_wave_path;
     QPainterPath horizontal_tick;
+
 };
 
 

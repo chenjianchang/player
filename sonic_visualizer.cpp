@@ -8,12 +8,7 @@ sonic_visualizer::sonic_visualizer(){
 
     this->setFrameStyle(0);
     this->setStyleSheet("background-color:rgb(250, 250, 250)");
-
-
-
     d = (this->height()-5-5)/20;
-    qDebug() << "sonic_visualizer:" << this->height();
-    repaint();
 
 }
 
@@ -21,8 +16,28 @@ void sonic_visualizer::paintEvent(QPaintEvent *e){
     Q_UNUSED(e);
     QPainter painter;
     painter.begin(this);
-    painter.setPen(QPen(Qt::black, 0.5));
+    painter.setPen(QPen(Qt::blue, 0.5));
     painter.setRenderHint(QPainter::Antialiasing);
+
+
+    // sonic wave path-------------------------------------------------------------
+    sonic_wave_path.moveTo(20,20);
+    sonic_wave_path.lineTo(25,50);
+    sonic_wave_path.lineTo(30,60);
+    sonic_wave_path.lineTo(45,80);
+    sonic_wave_path.lineTo(50,100);
+    sonic_wave_path.lineTo(55,120);
+    sonic_wave_path.lineTo(60,20);
+    sonic_wave_path.lineTo(75,50);
+    sonic_wave_path.lineTo(80,60);
+    sonic_wave_path.lineTo(85,80);
+    sonic_wave_path.lineTo(90,100);
+    sonic_wave_path.lineTo(95,120);
+
+    painter.drawPath(sonic_wave_path);
+
+    // sonic wave path------------------------------------------------------------
+    painter.setPen(QPen(Qt::black, 0.5));
     // vertical line
     painter.drawLine(QPoint(20, 5), QPoint(20, 5+20*d));
     // ticks

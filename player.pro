@@ -47,8 +47,7 @@ RESOURCES += \
 DISTFILES += \
     doc/CONFIG.db \
     doc/README.md \
-    doc/logs.txt \
-    doc/sun_spots.txt
+    doc/logs.txt
 
 QMAKE_CXXFLAGS +=  -Wno-unused-parameter
 

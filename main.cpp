@@ -80,5 +80,6 @@ int main(int argc, char *argv[])
     }
 
     player.show();
+
     return app.exec();
 }
