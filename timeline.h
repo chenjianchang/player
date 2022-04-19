@@ -11,7 +11,6 @@
 #include <QtCharts/QValueAxis>
 #include <QBoxLayout>
 #include <QPainter>
-#include <QScrollArea>
 #include <QLineEdit>
 #include <QToolButton>
 #include <QSpacerItem>
@@ -19,6 +18,9 @@
 #include <QLabel>
 #include <QComboBox>
 #include <QPainter>
+#include <QFrame>
+#include <QScrollBar>
+
 
 
 #include "sonic_visualizer.h"
@@ -37,7 +39,8 @@ public:
     QValueAxis *axisX = nullptr;
     QValueAxis *axisY = nullptr;
     QBoxLayout *layout = nullptr;
-    QScrollArea *audio_picture_area = nullptr;
+    QFrame *audio_picture_frame = nullptr;
+    QScrollBar *scrollbar = nullptr;
     QLineEdit *current_moment = nullptr;
     QSpacerItem *spacer = nullptr;
     QLabel *zoom = nullptr;
@@ -46,6 +49,7 @@ public:
     QVBoxLayout *v_layout = nullptr;
     QPainter *p = nullptr;
 
+    sonic_visualizer *view = nullptr;
 
 
 

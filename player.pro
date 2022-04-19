@@ -50,4 +50,6 @@ DISTFILES += \
     doc/logs.txt \
     doc/sun_spots.txt
 
+QMAKE_CXXFLAGS +=  -Wno-unused-parameter
+
 

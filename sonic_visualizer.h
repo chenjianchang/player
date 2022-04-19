@@ -2,12 +2,28 @@
 #define SONIC_VISUALIZER_H
 
 #include <QWidget>
-#include <QSvgWidget>
+#include <QColor>
+#include <QHash>
+#include <QPainterPath>
+#include <QGraphicsScene>
+#include <QFrame>
+#include <QResizeEvent>
 
 
-class sonic_visualizer:public QWidget
+class sonic_visualizer:public QFrame
+
 {
+    Q_OBJECT
+public:
+    sonic_visualizer();
 
+    void paint(QPainter &p);
+protected:
+    void paintEvent(QPaintEvent *event) override;
+    void resizeEvent(QResizeEvent *event) override;
+
+private:
+    int d;
 };
 
 
