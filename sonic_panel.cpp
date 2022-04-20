@@ -73,8 +73,7 @@ void sonic_panel::resizeEvent(QResizeEvent *event){
     Q_UNUSED(event);
     w = this->width();
     h = this->height();
-    qDebug()<< "sonic panel:" << this->height();
-//    update();
+
 }
 
 

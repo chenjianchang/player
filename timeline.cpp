@@ -63,7 +63,6 @@ void timeline::resizeEvent(QResizeEvent *event){
     this->audio_waveform_view->move(this->sonic_panel_frame->x(), this->sonic_panel_frame->y());
     this->audio_waveform_view->lower();
 
-    qDebug() << "timeline:" << this->sonic_panel_frame->height();
 
 }
 
