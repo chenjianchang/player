@@ -7,7 +7,7 @@ sonic_panel::sonic_panel(){
 
     this->setFrameStyle(0);
     this->setStyleSheet("background-color:rgba(250, 250, 250, 0)");
-    d = (this->height()-5-5)/20;
+    d = (this->height()-5-5-15)/20;
 }
 
 void sonic_panel::paintEvent(QPaintEvent *e){
@@ -74,7 +74,7 @@ void sonic_panel::resizeEvent(QResizeEvent *event){
     w = this->width();
     h = this->height();
     qDebug()<< "sonic panel:" << this->height();
-    update();
+//    update();
 }
 
 
