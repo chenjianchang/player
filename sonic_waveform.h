@@ -15,6 +15,7 @@ public:
     void draw_audio_picture(QString path);
 
     qreal d = 0;
+    int h = 0;
 
 };
 

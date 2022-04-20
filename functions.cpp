@@ -447,4 +447,33 @@ void update_database(QString table, QList<QString> states){
 }
 
 
+void draw_audio_picture(QString path){
+    //    FILE *fp = fopen("C:/Users/riben/Desktop/xiaoji/audio.pcm", "rb+");
+    //    short pcm_In = 0;
+    //    int size = 0;
+    //    int counter = 0;
+    //    long x = 0;
+    //    long y = 0;
+    //    QPointF temp(0, 0);
+    //    qreal c = (h-5-5-15)/2;
+    //    while(!feof(fp))
+    //    {
+    //            counter += 1;
+    //        if (counter > 100000){
+    //            break;
+    //        }
+    //        size = fread(&pcm_In, 2, 1, fp);
+    //        if (size > 0)
+    //        {
+    //            x+=1;
 
+    //            this->addLine(QLineF(temp, QPointF(x, c-y/1000*d)));
+    //            temp = QPointF(x, c-y/1000*d);
+    //            qDebug() << pcm_In;
+    //        }
+
+    //    }
+    //    update();
+
+    //    fclose(fp);
+}

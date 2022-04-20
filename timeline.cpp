@@ -43,6 +43,7 @@ timeline::timeline(){
 
 
 
+
     h_layout = new QHBoxLayout;
     v_layout = new QVBoxLayout;
     h_layout->addWidget(current_moment);
