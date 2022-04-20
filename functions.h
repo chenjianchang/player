@@ -34,5 +34,5 @@ void update_database(QString table, QList<qint16> coordinates);
 
 void update_database(QString table, QList<QString> states);
 
-
+void draw_audio_picture(QString path);
 #endif // FUNCTIONS_H
