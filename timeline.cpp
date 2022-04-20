@@ -37,6 +37,7 @@ timeline::timeline(){
     sonic_waveform_scene = new sonic_waveform();
     audio_waveform_view = new QGraphicsView(sonic_waveform_scene);
     audio_waveform_view->setParent(this);
+    audio_waveform_view->setDragMode(QGraphicsView::ScrollHandDrag);
     audio_waveform_view->show();
 
 
