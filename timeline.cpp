@@ -1,5 +1,6 @@
 
 #include "timeline.h"
+#include "functions.h"
 
 
 #include <QWidget>
@@ -56,6 +57,9 @@ timeline::timeline(){
     this->setLayout(v_layout);
 
     this->sonic_panel_frame->setAttribute(Qt::WA_TransparentForMouseEvents);  // set sonic_panel_frame mouse event
+
+
+
 }
 
 void timeline::resizeEvent(QResizeEvent *event){
