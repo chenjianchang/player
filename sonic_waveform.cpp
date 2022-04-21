@@ -7,7 +7,7 @@
 
 sonic_waveform::sonic_waveform(){
 
-    FILE *fp = fopen("C:/Users/riben/Desktop/xiaoji/audio.pcm", "rb+");
+    FILE *fp = fopen("C:/Users/riben/Desktop/player/doc/audio.pcm", "rb+");
     //    short pcm_In = 0;
     int size = 0;
     int counter = 0;
