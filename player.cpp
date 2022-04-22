@@ -53,8 +53,6 @@
 #include "playlistmodel.h"
 #include "videowidget.h"
 #include "functions.h"
-#include "editor.h"
-#include "timeline.h"
 #include "help.h"
 
 #include <string>
@@ -192,6 +190,7 @@ Player::Player(QWidget *parent)
 
     // add timeline and editor windows to this main window
     m_timeline_window = new timeline();
+    connect(this, &Player::generate_pixmap, m_timeline_window, &timeline::generate_pixmap_slot);
 
     m_editor_window = new editor();
     connect(m_timeline, &QToolButton::clicked, this, &Player::switch_timeline_window);
@@ -657,7 +656,8 @@ void Player::playlistPositionChanged(int currentItem)
     m_player->setSource(m_playlist->currentMedia());
 
     generate_subtitle(  (m_playlist->currentMedia()).toLocalFile(), m_subtitle_stringlist_primary, m_subtitle_stringlist_adjusted, m_subtitle_moment_time_list, m_subtitle_moment_content_list);
-
+    // emit signal to timeline window, to generate the sonic waveform pixmap
+    emit generate_pixmap((m_playlist->currentMedia()).toLocalFile());
 }
 
 void Player::seek(int mseconds)

@@ -16,8 +16,6 @@
 #include <QSvgWidget>
 #include <QGraphicsView>
 
-
-
 #include "sonic_panel.h"
 #include "sonic_waveform.h"
 
@@ -47,11 +45,16 @@ public:
     void resizeEvent(QResizeEvent *event);
 
 
-
 signals:
-
+    void pix(QString video_filename);
 
 public slots:
+    void generate_pixmap_slot(QString video_filename){
+        Q_UNUSED(video_filename)
+        qDebug() << "hello";
+    }
+
+
 
 private:
 

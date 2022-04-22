@@ -9,6 +9,7 @@
 #include <QString>
 #include <QStringList>
 #include <QPushButton>
+#include <QDebug>
 
 
 timeline::timeline(){
@@ -56,10 +57,6 @@ timeline::timeline(){
     this->setLayout(v_layout);
 
     this->sonic_panel_frame->setAttribute(Qt::WA_TransparentForMouseEvents);  // set sonic_panel_frame mouse event
-
-
-
-
 }
 
 void timeline::resizeEvent(QResizeEvent *event){
@@ -67,9 +64,8 @@ void timeline::resizeEvent(QResizeEvent *event){
     this->sonic_waveform_frame->resize(this->sonic_panel_frame->width(), this->sonic_panel_frame->height());
     this->sonic_waveform_frame->move(this->sonic_panel_frame->x(), this->sonic_panel_frame->y());
     this->sonic_waveform_frame->lower();
-
-
 }
+
 
 
 

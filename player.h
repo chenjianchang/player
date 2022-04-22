@@ -62,6 +62,9 @@
 #include <QList>
 #include <QCloseEvent>
 
+#include "timeline.h"
+#include "editor.h"
+
 QT_BEGIN_NAMESPACE
 class QAbstractItemView;
 class QLabel;
@@ -95,6 +98,7 @@ public:
 
 signals:
     void fullScreenChanged(bool fullScreen);
+    void generate_pixmap(QString video_filename);
 
 private slots:
     void open();
@@ -172,8 +176,8 @@ private:
     QList<qint64> m_subtitle_moment_time_list;   // edited by shaolang
     QList<QString> m_subtitle_moment_content_list;   // edited by shaolang
 
-    QWidget *m_timeline_window = nullptr;
-    QWidget *m_editor_window = nullptr;   // edited by shaolang
+    timeline *m_timeline_window = nullptr;
+    editor *m_editor_window = nullptr;   // edited by shaolang
     QWidget *m_help_window = nullptr;
 
 
