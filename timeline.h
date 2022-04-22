@@ -30,19 +30,19 @@ public:
     ~timeline()= default;
 
 
-    QBoxLayout *layout = nullptr;
     QLineEdit *current_moment = nullptr;
     QSpacerItem *spacer = nullptr;
     QLabel *zoom = nullptr;
     QComboBox *zoom_box = nullptr;
     QHBoxLayout *h_layout = nullptr;
     QVBoxLayout *v_layout = nullptr;
-    QPainter *p = nullptr;
 
     sonic_panel *sonic_panel_frame = nullptr;
 
-    sonic_waveform *sonic_waveform_scene = nullptr;
-    QGraphicsView *audio_waveform_view = nullptr;
+    sonic_waveform *sonic_waveform_frame = nullptr;
+
+    QSlider *slider = nullptr;
+
 
     void resizeEvent(QResizeEvent *event);
 

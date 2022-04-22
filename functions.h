@@ -12,6 +12,8 @@
 #include <QSqlError>
 #include <QSqlQuery>
 #include <QMessageBox>
+#include <QThread>
+#include <QPainter>
 
 
 std::string zfill(std::string s, int n, char c);
@@ -35,4 +37,21 @@ void update_database(QString table, QList<qint16> coordinates);
 void update_database(QString table, QList<QString> states);
 
 void draw_audio_picture(QString path);
+
+void extract_pcm(QString path);
+
+class generate_pix: QThread
+{
+public:
+    QString path;
+    QPixmap pixmap;
+    int w; // sonic_waveform width
+    int h; // sonic_waveform height
+    int d; // ticks interval
+
+    QPainter painter;
+
+
+};
+
 #endif // FUNCTIONS_H

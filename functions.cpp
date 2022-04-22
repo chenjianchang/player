@@ -10,6 +10,9 @@
 #include <QFileInfo>
 #include <QSettings>
 #include <QFile>
+#include <QProcess>
+#include <QCoreApplication>
+
 
 
 std::string zfill(std::string s, int n, char c){
@@ -472,4 +475,50 @@ void draw_audio_picture(QString path){
 //    qDebug() << "sizeof array" << sizeof(a);
 
 //    fclose(fp);
+}
+
+void extract_pcm(QString path){
+
+    // need to configure ffmpeg in the system first
+    QProcess _FFMPEG;
+    QString _program= "ffmpeg";
+    QStringList _command;
+
+//    QString file_name, pcm_filename;
+//    QFileInfo fileinfo;
+
+//    file_name = path;   // edited by shaolang
+//    fileinfo = QFileInfo(file_name);   // edited by shaolang
+//    file_name.chop(fileinfo.suffix().size());   // edited by shaolang
+//    pcm_filename = file_name.append("pcm");   // edited by shaolang
+//    write_logs("functions.cpp -- extract_pcm()", "490", pcm_filename);
+
+//    if(QFile(pcm_filename).exists())
+//    {
+//        write_logs("functions.cpp -- extract_pcm()", "498", QString("").append(pcm_filename).append(" already exists!"));
+//        return;
+//    }
+
+
+    _command << "-y" << "-i" << path << "-f" << "s16le" << "C:/Users/riben/Desktop/player/temp/introduction.pcm";
+    qDebug() << "in extract_pcm";
+
+    _FFMPEG.start(_program, _command);
+
+    if(_FFMPEG.waitForStarted())
+    {
+        qDebug() << "started successfully!";
+    }
+    else
+    {
+        qDebug() << "started failed!";
+    }
+    while(!_FFMPEG.waitForFinished(1000))
+    {
+        qDebug() << "wait ... ";
+        Sleep(2);
+        QCoreApplication::processEvents(QEventLoop::AllEvents, 2000);
+    }
+    qDebug() << "finished";
+
 }

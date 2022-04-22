@@ -56,4 +56,10 @@ DISTFILES += \
 
 QMAKE_CXXFLAGS +=  -Wno-unused-parameter
 
+INCLUDEPATH += $$PWD/ffmpeg/include
+
+LIBS += -L$$PWD/"ffmpeg/lib" -lavcodec -lavdevice -lavfilter -lavformat -lavutil -lpostproc -lswresample -lswscale
+
+
+
 

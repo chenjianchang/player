@@ -7,7 +7,7 @@ sonic_panel::sonic_panel(){
 
     this->setFrameStyle(0);
     this->setStyleSheet("background-color:rgba(250, 250, 250, 0)");
-    d = (this->height()-5-5-15)/20;
+    d = (this->height()-5-5)/20;
 }
 
 void sonic_panel::paintEvent(QPaintEvent *e){
@@ -19,26 +19,26 @@ void sonic_panel::paintEvent(QPaintEvent *e){
 
     painter.setPen(QPen(Qt::black, 0.5));
     // vertical line
-    painter.drawLine(QPoint(22, (h-15)/2-d*10), QPoint(22, (h-15)/2+d*10));
+    painter.drawLine(QPoint(22, h/2-d*10), QPoint(22, h/2+d*10));
     // ticks
-    d = (h-5-5-15)/20;
+    d = (h-5-5)/20;
     for(int i = 0; i <= 10; ++i)
     {
         if(i == 0)
         {
-            painter.drawLine(QPoint(22-5, (h-15)/2), QPoint(22, (h-15)/2));
+            painter.drawLine(QPoint(22-5, h/2), QPoint(22, h/2));
         }
         else
         {
             if(i % 2 == 1)
             {
-                painter.drawLine(QPoint(22-3, (h-15)/2+d*i), QPoint(22, (h-15)/2+d*i));
-                painter.drawLine(QPoint(22-3, (h-15)/2-d*i), QPoint(22, (h-15)/2-d*i));
+                painter.drawLine(QPoint(22-3, h/2+d*i), QPoint(22, h/2+d*i));
+                painter.drawLine(QPoint(22-3, h/2-d*i), QPoint(22, h/2-d*i));
             }
             else
             {
-                painter.drawLine(QPoint(22-5, (h-15)/2+d*i), QPoint(22, (h-15)/2+d*i));
-                painter.drawLine(QPoint(22-5, (h-15)/2-d*i), QPoint(22, (h-15)/2-d*i));
+                painter.drawLine(QPoint(22-5, h/2+d*i), QPoint(22, h/2+d*i));
+                painter.drawLine(QPoint(22-5, h/2-d*i), QPoint(22, h/2-d*i));
             }
         }
     }
@@ -48,19 +48,17 @@ void sonic_panel::paintEvent(QPaintEvent *e){
     painter.setFont(font);
     for(int i = 0; i < 21; ++i)
     {
-        painter.drawText( QRect(1, (h-15)/2-10*d+d*i-5, 14, d), Qt::AlignRight, QString("").number(1.0 - i*0.1) );
+        painter.drawText( QRect(1, h/2-10*d+d*i-5, 14, d), Qt::AlignRight, QString("").number(1.0 - i*0.1) );
     }
     // horizontal line
     painter.setPen(QPen(Qt::blue,0.5));
-    painter.drawLine(QPoint(22, (h-15)/2), QPoint(w, (h-15)/2));
+    painter.drawLine(QPoint(22, h/2), QPoint(w, h/2));
     // central vertical line
     painter.setPen(QPen(Qt::black,2));
-    painter.drawLine(QPoint(w/2, 5), QPoint(w/2, h-5-15));
+    painter.drawLine(QPoint(w/2, 5), QPoint(w/2, h-5));
 
     paint(painter);
     painter.end();
-
-
 }
 
 void sonic_panel::paint(QPainter &p){

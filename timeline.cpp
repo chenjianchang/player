@@ -35,18 +35,16 @@ timeline::timeline(){
 
     sonic_panel_frame = new sonic_panel();
 
-    sonic_waveform_scene = new sonic_waveform();
-    audio_waveform_view = new QGraphicsView(sonic_waveform_scene);
-    audio_waveform_view->setParent(this);
-    audio_waveform_view->setDragMode(QGraphicsView::ScrollHandDrag);
-    audio_waveform_view->show();
+    sonic_waveform_frame = new sonic_waveform();
+    sonic_waveform_frame->setParent(this);
+    sonic_waveform_frame->show();
 
-
-
+    slider = new QSlider(Qt::Horizontal);
 
 
     h_layout = new QHBoxLayout;
     v_layout = new QVBoxLayout;
+
     h_layout->addWidget(current_moment);
     h_layout->addSpacerItem(spacer);
     h_layout->addWidget(zoom);
@@ -54,9 +52,11 @@ timeline::timeline(){
 
     v_layout->addLayout(h_layout);
     v_layout->addWidget(sonic_panel_frame);
+    v_layout->addWidget(slider);
     this->setLayout(v_layout);
 
     this->sonic_panel_frame->setAttribute(Qt::WA_TransparentForMouseEvents);  // set sonic_panel_frame mouse event
+
 
 
 
@@ -64,9 +64,9 @@ timeline::timeline(){
 
 void timeline::resizeEvent(QResizeEvent *event){
     Q_UNUSED(event);
-    this->audio_waveform_view->resize(this->sonic_panel_frame->width(), this->sonic_panel_frame->height());
-    this->audio_waveform_view->move(this->sonic_panel_frame->x(), this->sonic_panel_frame->y());
-    this->audio_waveform_view->lower();
+    this->sonic_waveform_frame->resize(this->sonic_panel_frame->width(), this->sonic_panel_frame->height());
+    this->sonic_waveform_frame->move(this->sonic_panel_frame->x(), this->sonic_panel_frame->y());
+    this->sonic_waveform_frame->lower();
 
 
 }
