@@ -82,6 +82,6 @@ int main(int argc, char *argv[])
     }
 
     player.show();
-
+    extract_pcm("C:/Users/riben/Desktop/player/temp/introduction.mp4");
     return app.exec();
 }

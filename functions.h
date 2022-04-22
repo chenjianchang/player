@@ -44,8 +44,8 @@ class generate_pix: QThread
 {
     Q_OBJECT
 public:
-    generate_pix();
-    ~generate_pix();
+    generate_pix()=default;
+    ~generate_pix()=default;
 
     void run() override {
         QString result;

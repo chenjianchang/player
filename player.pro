@@ -14,6 +14,7 @@ QT += network \
 HEADERS = \
     editor.h \
     functions.h \
+    g_variable.h \
     help.h \
     player.h \
     playercontrols.h \
@@ -39,6 +40,8 @@ SOURCES = main.cpp \
     videowidget.cpp \
     qmediaplaylist.cpp \
     qplaylistfileparser.cpp
+
+DEFINES += SRC_PATH=$${PWD}
 
 target.path = $$[QT_INSTALL_EXAMPLES]/multimediawidgets/player
 INSTALLS += target

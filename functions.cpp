@@ -1,4 +1,5 @@
 #include "functions.h"
+#include "g_variable.h"
 
 #include <QOpenGLFunctions>
 #include <cmath>
@@ -12,7 +13,7 @@
 #include <QFile>
 #include <QProcess>
 #include <QCoreApplication>
-
+#include <QDir>
 
 
 std::string zfill(std::string s, int n, char c){
@@ -121,7 +122,7 @@ void write_logs(QString filename, QString row, QString content){
     temp.append(row.toUtf8());
     temp.append("  ");
     temp.append(content.toUtf8());
-    QFile logs("C:/Users/riben/Desktop/player/doc/logs.txt");
+    QFile logs(QString(source_path).append("/doc/logs.txt"));
     if (!logs.open(QIODevice::Append | QIODevice::Text))
              return;
     logs.write("\n");
@@ -350,7 +351,7 @@ void update_database(QString table, QList<qint16> coordinates){
         else
         {
             db = QSqlDatabase::addDatabase("QSQLITE");
-            db.setDatabaseName("C:/Users/riben/Desktop/player/doc/CONFIG.db");
+            db.setDatabaseName(QString(source_path).append("/doc/CONFIG.db"));
         }
         // judge weather database is open
         if(!db.open())
@@ -411,7 +412,8 @@ void update_database(QString table, QList<QString> states){
         else
         {
             db = QSqlDatabase::addDatabase("QSQLITE");
-            db.setDatabaseName("C:/Users/riben/Desktop/player/doc/CONFIG.db");
+            db.setDatabaseName(QString(source_path).append("/doc/CONFIG.db"));
+
         }
         // judge weather database is open
         if(!db.open())
@@ -484,24 +486,17 @@ void extract_pcm(QString path){
     QString _program= "ffmpeg";
     QStringList _command;
 
-//    QString file_name, pcm_filename;
-//    QFileInfo fileinfo;
+    QString video_file_name, file_name, pcm_filename;
+    QFileInfo fileinfo;
 
-//    file_name = path;   // edited by shaolang
-//    fileinfo = QFileInfo(file_name);   // edited by shaolang
-//    file_name.chop(fileinfo.suffix().size());   // edited by shaolang
-//    pcm_filename = file_name.append("pcm");   // edited by shaolang
-//    write_logs("functions.cpp -- extract_pcm()", "490", pcm_filename);
+    video_file_name = path;   // edited by shaolang
+    fileinfo = QFileInfo(video_file_name);
+    file_name = fileinfo.fileName();
+    file_name.chop(fileinfo.suffix().size());
+    pcm_filename = QString(source_path).append("/temp/").append(file_name).append("pcm");
+    write_logs("functions.cpp -- extract_pcm()", "494", pcm_filename);
 
-//    if(QFile(pcm_filename).exists())
-//    {
-//        write_logs("functions.cpp -- extract_pcm()", "498", QString("").append(pcm_filename).append(" already exists!"));
-//        return;
-//    }
-
-
-    _command << "-y" << "-i" << path << "-f" << "s16le" << "C:/Users/riben/Desktop/player/temp/introduction.pcm";
-    qDebug() << "in extract_pcm";
+    _command << "-y" << "-i" << path << "-f" << "s16le" << pcm_filename;
 
     _FFMPEG.start(_program, _command);
 

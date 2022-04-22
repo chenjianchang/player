@@ -54,6 +54,7 @@
 #include "videowidget.h"
 #include "functions.h"
 #include "help.h"
+#include "g_variable.h"
 
 #include <string>
 
@@ -326,7 +327,7 @@ void Player::load_spiltter_states(){
     else
     {
         db = QSqlDatabase::addDatabase("QSQLITE");
-        db.setDatabaseName("C:/Users/riben/Desktop/player/doc/CONFIG.db");
+        db.setDatabaseName(QString(source_path).append("/doc/CONFIG.db"));
     }
     // judge weather database is open
     if(!db.open())
@@ -380,7 +381,7 @@ void Player::load_location()
     else
     {
         db = QSqlDatabase::addDatabase("QSQLITE");
-        db.setDatabaseName("C:/Users/riben/Desktop/player/doc/CONFIG.db");
+        db.setDatabaseName(QString(source_path).append("/doc/CONFIG.db"));
     }
     // judge weather database is open
     if(!db.open())
