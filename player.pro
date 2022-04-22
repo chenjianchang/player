@@ -52,9 +52,6 @@ RESOURCES += \
 DISTFILES += \
     doc/CONFIG.db \
     doc/README.md \
-    doc/audio.pcm \
-    doc/introduction.mp4 \
-    doc/introduction.vtt \
     doc/logs.txt
 
 QMAKE_CXXFLAGS +=  -Wno-unused-parameter
