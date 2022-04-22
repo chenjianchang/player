@@ -4,12 +4,11 @@
 #include <QWidget>
 #include <QColor>
 #include <QHash>
-#include <QPainterPath>
-#include <QGraphicsScene>
 #include <QFrame>
 #include <QResizeEvent>
-#include <QSvgWidget>
+#include <QGraphicsScene>
 #include <QGraphicsView>
+#include <QPainterPath>
 
 
 class sonic_panel:public QFrame

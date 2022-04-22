@@ -54,6 +54,7 @@ DISTFILES += \
     doc/README.md \
     doc/logs.txt \
 
+
 QMAKE_CXXFLAGS +=  -Wno-unused-parameter
 
 INCLUDEPATH += $$PWD/ffmpeg/include

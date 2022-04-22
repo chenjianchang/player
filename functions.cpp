@@ -1,7 +1,6 @@
 #include "functions.h"
 #include "g_variable.h"
 
-#include <QOpenGLFunctions>
 #include <cmath>
 #include <QDate>
 #include <QTime>
@@ -14,6 +13,7 @@
 #include <QProcess>
 #include <QCoreApplication>
 #include <QDir>
+#include <QThread>
 
 
 std::string zfill(std::string s, int n, char c){
@@ -511,7 +511,7 @@ void extract_pcm(QString path){
     while(!_FFMPEG.waitForFinished(1000))
     {
         qDebug() << "wait ... ";
-        Sleep(2);
+//        sleep(2);
         QCoreApplication::processEvents(QEventLoop::AllEvents, 2000);
     }
     qDebug() << "finished";

@@ -11,10 +11,7 @@
 #include <QLayout>
 #include <QLabel>
 #include <QComboBox>
-#include <QPainter>
 #include <QFrame>
-#include <QSvgWidget>
-#include <QGraphicsView>
 
 #include "sonic_panel.h"
 #include "sonic_waveform.h"
