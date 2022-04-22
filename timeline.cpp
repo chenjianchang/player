@@ -1,7 +1,5 @@
-
 #include "timeline.h"
 #include "functions.h"
-
 
 #include <QWidget>
 #include <QtCore/QFile>
@@ -42,7 +40,6 @@ timeline::timeline(){
 
     slider = new QSlider(Qt::Horizontal);
 
-
     h_layout = new QHBoxLayout;
     v_layout = new QVBoxLayout;
 
@@ -66,6 +63,8 @@ void timeline::resizeEvent(QResizeEvent *event){
     this->sonic_waveform_frame->lower();
 }
 
-
-
+void timeline::generate_pixmap_slot(QString video_filename){
+    Q_UNUSED(video_filename)
+    qDebug() << "hello";
+}
 

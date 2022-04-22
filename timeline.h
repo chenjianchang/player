@@ -46,13 +46,10 @@ public:
 
 
 signals:
-    void pix(QString video_filename);
+
 
 public slots:
-    void generate_pixmap_slot(QString video_filename){
-        Q_UNUSED(video_filename)
-        qDebug() << "hello";
-    }
+    void generate_pixmap_slot(QString video_filename);
 
 
 

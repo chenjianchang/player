@@ -54,3 +54,21 @@
 2022-04-22 19:31:56.550  player.cpp -- Player::closeEvent  775  update database successfully!
 2022-04-22 19:31:56.558  functions.cpp -- update_database()  359  database open successfully
 2022-04-22 19:31:56.559  functions.cpp -- update_database()  389  updated!
+2022-04-22 20:30:40.309  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-22 20:30:40.309  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-22 20:30:40.309  player.cpp -- load_states  339  open database successfully!
+2022-04-22 20:30:40.309  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-22 20:31:31.855  functions.cpp -- update_database()  359  database open successfully
+2022-04-22 20:31:31.859  functions.cpp -- update_database()  389  updated!
+2022-04-22 20:31:31.859  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-22 20:31:31.860  functions.cpp -- update_database()  359  database open successfully
+2022-04-22 20:31:31.861  functions.cpp -- update_database()  389  updated!
+2022-04-22 20:41:37.291  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-22 20:41:37.291  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-22 20:41:37.291  player.cpp -- load_states  339  open database successfully!
+2022-04-22 20:41:37.291  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-22 20:42:04.961  functions.cpp -- update_database()  359  database open successfully
+2022-04-22 20:42:04.963  functions.cpp -- update_database()  389  updated!
+2022-04-22 20:42:04.963  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-22 20:42:04.964  functions.cpp -- update_database()  359  database open successfully
+2022-04-22 20:42:04.965  functions.cpp -- update_database()  389  updated!

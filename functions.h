@@ -42,6 +42,20 @@ void extract_pcm(QString path);
 
 class generate_pix: QThread
 {
+    Q_OBJECT
+public:
+    generate_pix();
+    ~generate_pix();
+
+    void run() override {
+        QString result;
+        /* ... here is the expensive or blocking operation ... */
+        emit resultReady(result);
+    }
+
+signals:
+    void resultReady(const QString &s);
+
 public:
     QString path;
     QPixmap pixmap;
@@ -50,8 +64,9 @@ public:
     int d; // ticks interval
 
     QPainter painter;
-
-
 };
 
 #endif // FUNCTIONS_H
+
+
+
