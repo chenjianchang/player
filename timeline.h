@@ -15,6 +15,7 @@
 
 #include "sonic_panel.h"
 #include "sonic_waveform.h"
+#include "functions.h"
 
 
 class timeline: public QWidget
@@ -38,21 +39,19 @@ public:
 
     QSlider *slider = nullptr;
 
-
     void resizeEvent(QResizeEvent *event);
 
-
+    qint16 sonic_waveform_width = 1;
+    qint16 sonic_waveform_height = 1;
 signals:
 
 
 public slots:
-    void generate_pixmap_slot(QString video_filename);
-
-
+    void generate_pcm_slot(QString video_filename);
+    void generate_pixmaps_slot(QString pcm_filename);
+    void nothing();
 
 private:
-
-
 
 
 };

@@ -24,21 +24,12 @@ protected:
     void paintEvent(QPaintEvent *event) override;
     void resizeEvent(QResizeEvent *event) override;
 
-
 private:
     int w;   // this->width()
     int h;   // this->heigth()
     int d;
 
-    QGraphicsScene *sonic_scene = nullptr;
-    QGraphicsView *sonic_view = nullptr;
-
-    QPainterPath sonic_wave_path;
-    QPainterPath horizontal_tick;
-
 };
-
-
 
 
 #endif // SONIC_VISUALIZER_H

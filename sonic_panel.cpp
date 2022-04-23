@@ -1,4 +1,5 @@
 #include "sonic_panel.h"
+
 #include <QtWidgets>
 #include <QString>
 
@@ -20,8 +21,7 @@ void sonic_panel::paintEvent(QPaintEvent *e){
     painter.setPen(QPen(Qt::black, 0.5));
     // vertical line
     painter.drawLine(QPoint(22, h/2-d*10), QPoint(22, h/2+d*10));
-    // ticks
-    d = (h-5-5)/20;
+
     for(int i = 0; i <= 10; ++i)
     {
         if(i == 0)
@@ -71,6 +71,7 @@ void sonic_panel::resizeEvent(QResizeEvent *event){
     Q_UNUSED(event);
     w = this->width();
     h = this->height();
+    d = (this->height()-5-5)/20;
 }
 
 

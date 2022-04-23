@@ -36,32 +36,53 @@ void update_database(QString table, QList<qint16> coordinates);
 
 void update_database(QString table, QList<QString> states);
 
-void draw_audio_picture(QString path);
+void draw_audio_picture(QString pcm_path, qint16 w, qint16 h, qreal d);
 
-void extract_pcm(QString path);
+QString extract_pcm(QString video_path);
 
-class generate_pix: QThread
-{
+class generate_pcm: public QThread{
     Q_OBJECT
 public:
-    generate_pix()=default;
+    generate_pcm(QString video_path);
+    ~generate_pcm()=default;
+
+    void run() override {
+        QString result;
+        /* ... here is the expensive or blocking operation ... */
+        result = extract_pcm(path);
+        emit resultReady(result);
+    }
+
+signals:
+    void resultReady(QString s);
+
+public:
+    QString path;
+};
+
+class generate_pix: public QThread{
+    Q_OBJECT
+public:
+    generate_pix(QString pcm_path, qint16 width, qint16 height);
     ~generate_pix()=default;
 
     void run() override {
         QString result;
         /* ... here is the expensive or blocking operation ... */
+        draw_audio_picture(path,w,h,d);
+        result = "finished";
         emit resultReady(result);
     }
 
 signals:
-    void resultReady(const QString &s);
+    void resultReady(QString s);
 
 public:
     QString path;
     QPixmap pixmap;
-    int w; // sonic_waveform width
-    int h; // sonic_waveform height
-    int d; // ticks interval
+    qint16 w; // sonic_waveform width
+    qint16 h; // sonic_waveform height
+    qreal d=1; // ticks interval
 
     QPainter painter;
 };

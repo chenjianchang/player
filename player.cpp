@@ -191,7 +191,7 @@ Player::Player(QWidget *parent)
 
     // add timeline and editor windows to this main window
     m_timeline_window = new timeline();
-    connect(this, &Player::generate_pixmap, m_timeline_window, &timeline::generate_pixmap_slot);
+    connect(this, &Player::generate_pixmap, m_timeline_window, &timeline::generate_pcm_slot);
 
     m_editor_window = new editor();
     connect(m_timeline, &QToolButton::clicked, this, &Player::switch_timeline_window);
@@ -310,6 +310,9 @@ Player::Player(QWidget *parent)
 
     // load states
     load_spiltter_states();
+
+    m_timeline_window->show();
+    m_timeline_window->hide();
 
 }
 

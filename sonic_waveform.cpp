@@ -1,4 +1,6 @@
 #include "sonic_waveform.h"
+#include "g_variable.h"
+
 #include <QFile>
 #include <QPainter>
 
@@ -11,10 +13,8 @@ sonic_waveform::sonic_waveform(){
     label_a = new QLabel();
     label_a->setParent(this);
 
-
     label_b = new QLabel();
     label_b->setParent(this);
-
 }
 
 void sonic_waveform::resizeEvent(QResizeEvent *e){
@@ -38,48 +38,6 @@ void sonic_waveform::paintEvent(QPaintEvent *e){
 }
 
 
-
-
-
-
-//    FILE *fp = fopen("C:/Users/riben/Desktop/player/doc/audio.pcm", "rb+");
-//    //    short pcm_In = 0;
-//    int size = 0;
-//    int counter = 0;
-//    short a[500];
-//    short x=0;
-//    short tempx = 0;
-//    short tempy = 0;
-//    h = this->height();
-//    d = (this->height()-5-5-15)/20;
-//    float c = (h-5-5-15)/2+5;
-
-
-//    while(!feof(fp))
-//    {
-
-//        size = fread(&a, 2, 500, fp);
-//        if (size > 0)
-//        {
-
-//    //        qDebug() << a[0];
-//            counter += 1;
-//            x += 1;
-//            for (int j = 0; j < 500/2; ++j){
-//                this->addLine(tempx, tempy, x, c-a[j]/1000*d);
-//                tempx = x;
-//                tempy = c-a[j]/1000*d;
-//            }
-//            qDebug() << "c:" << h << ":" << d;
-
-
-//        }
-
-//    }
-//    qDebug() << "counter" << counter;
-
-
-//    fclose(fp);
 
 
 

@@ -1,5 +1,4 @@
 #include "timeline.h"
-#include "functions.h"
 
 #include <QWidget>
 #include <QtCore/QFile>
@@ -54,17 +53,64 @@ timeline::timeline(){
     this->setLayout(v_layout);
 
     this->sonic_panel_frame->setAttribute(Qt::WA_TransparentForMouseEvents);  // set sonic_panel_frame mouse event
+
+//    // initial a thread
+//    generate_pix_thread = new generate_pix();
+
 }
 
 void timeline::resizeEvent(QResizeEvent *event){
     Q_UNUSED(event);
-    this->sonic_waveform_frame->resize(this->sonic_panel_frame->width(), this->sonic_panel_frame->height());
+    sonic_waveform_width = this->sonic_panel_frame->width();
+    sonic_waveform_height = this->sonic_panel_frame->height();
+    this->sonic_waveform_frame->resize(sonic_waveform_width, sonic_waveform_height);
     this->sonic_waveform_frame->move(this->sonic_panel_frame->x(), this->sonic_panel_frame->y());
     this->sonic_waveform_frame->lower();
+    qDebug() << "resize";
 }
 
-void timeline::generate_pixmap_slot(QString video_filename){
-    Q_UNUSED(video_filename)
-    qDebug() << "hello";
+void timeline::generate_pcm_slot(QString video_filename){
+
+    qDebug() << "generate_pcm_slot ...";
+    generate_pcm *generate_pcm_thread = new generate_pcm(video_filename);
+    connect(generate_pcm_thread, &generate_pcm::resultReady, this, &timeline::generate_pixmaps_slot);
+    generate_pcm_thread->run();
+
+    delete generate_pcm_thread;
 }
+
+void timeline::generate_pixmaps_slot(QString pcm_filename){
+    qDebug() << "generate_pixmaps_slot ...";
+    generate_pix *generate_pixmaps_thread = new generate_pix(pcm_filename, sonic_waveform_width, sonic_waveform_height);
+    connect(generate_pixmaps_thread, &generate_pix::resultReady, this, &timeline::nothing);
+    generate_pixmaps_thread->run();
+
+    delete generate_pixmaps_thread;
+}
+
+void timeline::nothing()
+{
+    qDebug() << "pixmaps are all generated!";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -10,10 +10,16 @@
 #include <QFileInfo>
 #include <QSettings>
 #include <QFile>
+#include <QDataStream>
+#include <QBuffer>
 #include <QProcess>
 #include <QCoreApplication>
 #include <QDir>
 #include <QThread>
+#include <QPixmap>
+#include <QPainter>
+#include <stdio.h>
+#include <QtCore5Compat/QTextCodec>
 
 
 std::string zfill(std::string s, int n, char c){
@@ -452,51 +458,74 @@ void update_database(QString table, QList<QString> states){
 }
 
 
-void draw_audio_picture(QString path){
-    Q_UNUSED(path)
-//    FILE *fp = fopen("C:/Users/riben/Desktop/xiaoji/audio.pcm", "rb+");
-//    short pcm_In = 0;
-//    int size = 0;
-//    int counter = 0;
-//    short a[500];
+void draw_audio_picture(QString pcm_path, qint16 w, qint16 h, qreal d){
+
+    QTextCodec *code = QTextCodec::codecForName("GB2312");
+    std::string pcm_path_available = code->fromUnicode(pcm_path).data();  // chiese path name
+    FILE *fp = fopen(pcm_path_available.data(), "rb+");
+
+    int size = 0;
+    int counter = 0;
+    short a[500*w];
+    int x=0;
+    int tempx = 0;
+    int tempy = 0;
+    float c = h/2;
 
 
-//    while(!feof(fp))
-//    {
+    while(!feof(fp))
+    {
+        size = fread(a, 2, 500*w, fp);
+        qDebug() << "size:" << size;
+        if (size > 0)
+        {
+            counter += 1;
 
-//        size = fread(&a, 2, 500, fp);
-//        if (size > 0)
-//        {
+            QPixmap pix(w, h);
+            pix.fill(Qt::transparent);
+            QPainter painter(&pix);
+            painter.setRenderHint(QPainter::Antialiasing);
+            painter.setPen(Qt::blue);
 
-//            qDebug() << a[0];
-//            counter += 1;
-//        }
+            for(int k = 0; k < w; k++){
+                x += 1;
+                for (int j = 0; j < 500/2; ++j){
+                    painter.drawLine(tempx, tempy, x, c-a[500*k+j*2]/1000*d);
+                    tempx = x;
+                    tempy = c-a[500*k+j*2]/1000*d;
+                }
+            }
+            painter.end();
+            pix.save(QString(source_path).append("/temp/").append(QString("").number(counter)).append(".png"));
+            tempx = 0;
+            x = x - w;
+        }
+    }
+    qDebug() << "counter" << counter;
+    qDebug() << "sizeof array" << sizeof(a);
 
-//    }
-//    qDebug() << "counter" << counter;
-//    qDebug() << "sizeof array" << sizeof(a);
-
-//    fclose(fp);
+    fclose(fp);
 }
 
-void extract_pcm(QString path){
+QString extract_pcm(QString video_path){
 
     // need to configure ffmpeg in the system first
     QProcess _FFMPEG;
     QString _program= "ffmpeg";
     QStringList _command;
 
-    QString video_file_name, file_name, pcm_filename;
+    QString video_file_name, file_name, pcm_file_name;
     QFileInfo fileinfo;
 
-    video_file_name = path;   // edited by shaolang
+    video_file_name = video_path;   // edited by shaolang
     fileinfo = QFileInfo(video_file_name);
     file_name = fileinfo.fileName();
     file_name.chop(fileinfo.suffix().size());
-    pcm_filename = QString(source_path).append("/temp/").append(file_name).append("pcm");
-    write_logs("functions.cpp -- extract_pcm()", "494", pcm_filename);
+    pcm_file_name = QString(source_path).append("/temp/").append(file_name).append("pcm");
 
-    _command << "-y" << "-i" << path << "-f" << "s16le" << pcm_filename;
+    write_logs("functions.cpp -- extract_pcm()", "494", pcm_file_name);
+
+    _command << "-y" << "-i" << video_path << "-f" << "s16le" << pcm_file_name;
 
     _FFMPEG.start(_program, _command);
 
@@ -508,7 +537,7 @@ void extract_pcm(QString path){
     {
         qDebug() << "started failed!";
     }
-    while(!_FFMPEG.waitForFinished(1000))
+    while(!_FFMPEG.waitForFinished(-1))
     {
         qDebug() << "wait ... ";
 //        sleep(2);
@@ -516,4 +545,21 @@ void extract_pcm(QString path){
     }
     qDebug() << "finished";
 
+    return pcm_file_name;
 }
+
+generate_pcm::generate_pcm(QString video_path)
+{
+    path = video_path;
+}
+
+generate_pix::generate_pix(QString pcm_path, qint16 width, qint16 height){
+    path = pcm_path;
+    w = width;
+    h = height;
+    d= (height-5-5)/20;
+}
+
+
+
+

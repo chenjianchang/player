@@ -9,7 +9,8 @@ QT += network \
       charts \
       sql \
       svg \
-      svgwidgets
+      svgwidgets \
+      core5compat
 
 HEADERS = \
     editor.h \    
