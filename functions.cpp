@@ -471,6 +471,7 @@ int draw_audio_picture(QString pcm_path, qint16 w, qint16 h, qreal d){
     int tempx = 0;
     int tempy = 0;
     float c = h/2;
+
     // int16_t *pcmdata;
     // pcmdata = (int16_t *)malloc(10000);
     // free(pcmdata);

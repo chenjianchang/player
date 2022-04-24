@@ -192,6 +192,7 @@ Player::Player(QWidget *parent)
     // add timeline and editor windows to this main window
     m_timeline_window = new timeline();
     connect(this, &Player::generate_pixmap, m_timeline_window, &timeline::generate_pcm_slot);
+    connect(m_player, &QMediaPlayer::positionChanged, m_timeline_window, &timeline::player_move_sonic_waveform);
 
     m_editor_window = new editor();
     connect(m_timeline, &QToolButton::clicked, this, &Player::switch_timeline_window);

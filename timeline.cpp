@@ -24,7 +24,15 @@ timeline::timeline(){
     current_moment->setAlignment(Qt::AlignCenter);
     current_moment->setFixedWidth(150);
     current_moment->setText("current moment");
+
+
     spacer = new QSpacerItem(10,10, QSizePolicy::Expanding);
+
+    current_time_label = new QLabel();
+    current_time_label->setParent(this);
+    current_time_label->setStyleSheet("background-color:rgba(250,250,250,0);color:red;");
+    current_time_label->setAlignment(Qt::AlignCenter);
+
     zoom = new QLabel(tr("Zoom:"));
     zoom->setParent(this);
     zoom_box = new QComboBox();
@@ -39,8 +47,11 @@ timeline::timeline(){
     sonic_waveform_frame = new sonic_waveform();
     sonic_waveform_frame->setParent(this);
     sonic_waveform_frame->show();
+    connect(sonic_waveform_frame, &sonic_waveform::send_mouse_pos_to_timeline,
+            this, &timeline::show_current_time);
 
     slider = new QSlider(Qt::Horizontal);
+    connect(slider, &QSlider::sliderMoved, this, &timeline::slider_move_sonic_waveform);
 
     h_layout = new QHBoxLayout;
     v_layout = new QVBoxLayout;
@@ -73,6 +84,12 @@ void timeline::resizeEvent(QResizeEvent *event){
     qDebug() << "resize";
     emit send_info_to_sonic_waveform_frame(this->sonic_panel_frame->x(), this->sonic_panel_frame->y(),
                                            sonic_waveform_width, sonic_waveform_height);
+
+    current_time_label->resize(this->current_moment->width(), this->current_moment->height());
+    current_time_label->move(this->sonic_panel_frame->width()/2-this->current_time_label->width()/2+this->sonic_panel_frame->x(),
+                             this->current_moment->y());
+    current_time_label->show();
+
 }
 
 void timeline::generate_pcm_slot(QString video_filename){
@@ -89,10 +106,12 @@ void timeline::generate_pixmaps_slot(QString pcm_filename){
 
     generate_pix *generate_pixmaps_thread = new generate_pix(pcm_filename, sonic_waveform_width, sonic_waveform_height);
     connect(generate_pixmaps_thread, &generate_pix::resultReady, this->sonic_waveform_frame, &sonic_waveform::add_pixmaps);
+    connect(generate_pixmaps_thread, &generate_pix::resultReady, this, &timeline::set_slider_range);
     generate_pixmaps_thread->run();
 
     delete generate_pixmaps_thread;
     qDebug() << "generate_pixmaps_slot ...";
+    set_mouse_tracking = true;
 }
 
 void timeline::nothing()
@@ -237,10 +256,44 @@ void timeline::nothing()
 //    if(ifmt_ctx)
 //        avformat_close_input(&ifmt_ctx);
 
-
 //    getchar(); // pause
 //    return;
 }
+
+void timeline::slider_move_sonic_waveform(int pos){
+    this->sonic_waveform_frame->move(this->sonic_panel_frame->x()-pos, this->sonic_panel_frame->y());
+    current_waveform_pos = pos;
+}
+
+void timeline::set_slider_range(int counter){
+    this->slider->setRange(0, this->sonic_panel_frame->width()*counter);
+}
+
+void timeline::show_current_time(int x){
+    if (set_mouse_tracking)
+    {
+        if(x<this->sonic_panel_frame->width()/2 || x>this->sonic_waveform_frame->width()-this->sonic_panel_frame->width()/2){
+            this->current_moment->setText("00:00:00.000");
+        }
+        else
+        {
+            this->current_moment->setText(change_position_into_time(long((x-this->sonic_panel_frame->width()/2)/(float)192*1000)));
+        }
+    }
+    else
+    {
+        this->current_moment->setText("00:00:00.000");
+    }
+
+}
+
+
+void timeline::player_move_sonic_waveform(qint64 position){
+    this->sonic_waveform_frame->move(this->sonic_panel_frame->x()-(position/(float)1000*192), this->sonic_panel_frame->y());
+    this->current_time_label->setText(change_position_into_time(position));
+
+}
+
 
 
 

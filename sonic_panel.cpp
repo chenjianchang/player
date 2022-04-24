@@ -15,8 +15,12 @@ void sonic_panel::paintEvent(QPaintEvent *e){
     Q_UNUSED(e);
     QPainter painter;
     painter.begin(this);
-    painter.setPen(QPen(Qt::blue, 0.5));
+
+
+    painter.setPen(Qt::NoPen);
     painter.setRenderHint(QPainter::Antialiasing);
+    painter.setBrush(QBrush(QColor(Qt::white)));
+    painter.drawRect(0, 0, 23, h);
 
     painter.setPen(QPen(Qt::black, 0.5));
     // vertical line
