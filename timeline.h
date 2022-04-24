@@ -40,16 +40,16 @@ public:
     QSlider *slider = nullptr;
 
     void resizeEvent(QResizeEvent *event);
+    void nothing();
 
     qint16 sonic_waveform_width = 1;
     qint16 sonic_waveform_height = 1;
 signals:
-
+    void send_info_to_sonic_waveform_frame(qint16 x, qint16 y, qint16 w, qint16 h);
 
 public slots:
     void generate_pcm_slot(QString video_filename);
     void generate_pixmaps_slot(QString pcm_filename);
-    void nothing();
 
 private:
 

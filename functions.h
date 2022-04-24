@@ -36,7 +36,7 @@ void update_database(QString table, QList<qint16> coordinates);
 
 void update_database(QString table, QList<QString> states);
 
-void draw_audio_picture(QString pcm_path, qint16 w, qint16 h, qreal d);
+int draw_audio_picture(QString pcm_path, qint16 w, qint16 h, qreal d);
 
 QString extract_pcm(QString video_path);
 
@@ -67,22 +67,21 @@ public:
     ~generate_pix()=default;
 
     void run() override {
-        QString result;
+        int result;
         /* ... here is the expensive or blocking operation ... */
-        draw_audio_picture(path,w,h,d);
-        result = "finished";
+        result = draw_audio_picture(path,w,h,d);
         emit resultReady(result);
     }
 
 signals:
-    void resultReady(QString s);
+    void resultReady(int s);
 
 public:
     QString path;
     QPixmap pixmap;
-    qint16 w; // sonic_waveform width
-    qint16 h; // sonic_waveform height
-    qreal d=1; // ticks interval
+    qint16 w=0; // sonic_waveform width
+    qint16 h=0; // sonic_waveform height
+    qreal d=0; // ticks interval
 
     QPainter painter;
 };

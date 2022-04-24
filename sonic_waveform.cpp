@@ -7,34 +7,40 @@
 
 
 sonic_waveform::sonic_waveform(){
-    w = this->height();
-    h = this->width();
 
-    label_a = new QLabel();
-    label_a->setParent(this);
 
-    label_b = new QLabel();
-    label_b->setParent(this);
 }
 
 void sonic_waveform::resizeEvent(QResizeEvent *e){
     Q_UNUSED(e)
-    w = this->width();
-    h = this->height();
 }
 
 void sonic_waveform::paintEvent(QPaintEvent *e){
     Q_UNUSED(e)
 
-    label_a->resize(w,  h);
-    label_a->move(-w/2, 0);
-    label_a->setStyleSheet("background-color:rgba(100,50,50,50)");
-    label_a->show();
+    this->resize(w*counter + w, h);
+    QPainter painter(this);
+    for (int i = 1; i <= counter; i++){
+        painter.drawPixmap(w/2+w*(i-1), 0,
+                           QPixmap(QString(source_path).append("/temp/").append(QString("").number(i)).append(".png")));
+    }
+    qDebug() << "drawing pixmaps";
+}
 
-    label_b->resize(w, h);
-    label_b->move(w/2, 0);
-    label_b->setStyleSheet("background-color:rgba(50,100,50,50)");
-    label_b->show();
+void sonic_waveform::add_pixmaps(int counter)
+{
+
+    this->counter = counter;
+    update();
+    qDebug() << "add pixmaps";
+}
+
+void sonic_waveform::receive_info_from_timeline(qint16 x, qint16 y, qint16 w, qint16 h){
+    this->w = w;
+    this->h = h;
+    this->x = x;
+    this->y = y;
+    d = (h-5-5)/2;
 }
 
 

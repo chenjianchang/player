@@ -13,10 +13,11 @@ QT += network \
       core5compat
 
 HEADERS = \
-    editor.h \    
+    editor.h \
     functions.h \
     g_variable.h \
     help.h \
+    my_ffmpeg.h \
     player.h \
     playercontrols.h \
     playlistmodel.h \

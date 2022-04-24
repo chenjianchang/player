@@ -458,10 +458,10 @@ void update_database(QString table, QList<QString> states){
 }
 
 
-void draw_audio_picture(QString pcm_path, qint16 w, qint16 h, qreal d){
+int draw_audio_picture(QString pcm_path, qint16 w, qint16 h, qreal d){
 
     QTextCodec *code = QTextCodec::codecForName("GB2312");
-    std::string pcm_path_available = code->fromUnicode(pcm_path).data();  // chiese path name
+    std::string pcm_path_available = code->fromUnicode(pcm_path).data();  // chinese path name
     FILE *fp = fopen(pcm_path_available.data(), "rb+");
 
     int size = 0;
@@ -471,6 +471,9 @@ void draw_audio_picture(QString pcm_path, qint16 w, qint16 h, qreal d){
     int tempx = 0;
     int tempy = 0;
     float c = h/2;
+    // int16_t *pcmdata;
+    // pcmdata = (int16_t *)malloc(10000);
+    // free(pcmdata);
 
 
     while(!feof(fp))
@@ -492,7 +495,7 @@ void draw_audio_picture(QString pcm_path, qint16 w, qint16 h, qreal d){
                 for (int j = 0; j < 500/2; ++j){
                     painter.drawLine(tempx, tempy, x, c-a[500*k+j*2]/1000*d);
                     tempx = x;
-                    tempy = c-a[500*k+j*2]/1000*d;
+                    tempy = c+5-a[500*k+j*2]/1000*d;
                 }
             }
             painter.end();
@@ -505,6 +508,7 @@ void draw_audio_picture(QString pcm_path, qint16 w, qint16 h, qreal d){
     qDebug() << "sizeof array" << sizeof(a);
 
     fclose(fp);
+    return counter;
 }
 
 QString extract_pcm(QString video_path){
