@@ -55,6 +55,7 @@ DISTFILES += \
     doc/CONFIG.db \
     doc/README.md \
     doc/logs.txt \
+    temp/test.txt
 
 
 QMAKE_CXXFLAGS +=  -Wno-unused-parameter
