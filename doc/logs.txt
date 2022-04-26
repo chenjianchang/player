@@ -1,0 +1,104 @@
+
+2022-04-25 18:31:42.632  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-25 18:31:42.633  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-25 18:31:42.636  player.cpp -- load_states  339  open database successfully!
+2022-04-25 18:31:42.636  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-25 18:31:57.772  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-25 18:31:57.773  functions.cpp  151  find available subtitle!
+2022-04-25 18:31:57.784  functions.cpp -- extract_pcm()  494  C:/Users/riben/Desktop/player/temp/1-课程介绍.pcm
+2022-04-25 18:34:57.783  functions.cpp  145  vtt
+2022-04-25 18:34:57.784  functions.cpp  156  subtitle file not exist
+2022-04-25 18:34:57.785  functions.cpp -- extract_pcm()  494  C:/Users/riben/Desktop/player/temp/pcm
+2022-04-25 20:08:10.322  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-25 20:08:10.333  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-25 20:08:10.336  player.cpp -- load_states  339  open database successfully!
+2022-04-25 20:08:10.336  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-25 20:08:23.864  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-25 20:08:23.866  functions.cpp  151  find available subtitle!
+2022-04-25 20:08:23.886  functions.cpp -- extract_pcm()  494  C:/Users/riben/Desktop/player/temp/1-课程介绍.pcm
+2022-04-25 20:09:27.567  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:09:27.579  functions.cpp -- update_database()  389  updated!
+2022-04-25 20:09:27.580  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-25 20:09:27.589  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:09:27.590  functions.cpp -- update_database()  389  updated!
+2022-04-25 20:10:46.454  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-25 20:10:46.455  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-25 20:10:46.457  player.cpp -- load_states  339  open database successfully!
+2022-04-25 20:10:46.457  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-25 20:10:53.388  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-25 20:10:53.389  functions.cpp  151  find available subtitle!
+2022-04-25 20:10:53.392  functions.cpp -- extract_pcm()  494  C:/Users/riben/Desktop/player/temp/1-课程介绍.pcm
+2022-04-25 20:11:14.079  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:11:14.081  functions.cpp -- update_database()  389  updated!
+2022-04-25 20:11:14.082  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-25 20:11:14.084  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:11:14.085  functions.cpp -- update_database()  389  updated!
+2022-04-25 20:11:36.603  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-25 20:11:36.609  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-25 20:11:36.610  player.cpp -- load_states  339  open database successfully!
+2022-04-25 20:11:36.611  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-25 20:11:48.414  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-25 20:11:48.415  functions.cpp  151  find available subtitle!
+2022-04-25 20:11:48.419  functions.cpp -- extract_pcm()  494  C:/Users/riben/Desktop/player/temp/1-课程介绍.pcm
+2022-04-25 20:12:33.144  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:12:33.146  functions.cpp -- update_database()  389  updated!
+2022-04-25 20:12:33.147  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-25 20:12:33.148  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:12:33.148  functions.cpp -- update_database()  389  updated!
+2022-04-25 20:12:47.286  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-25 20:12:47.297  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-25 20:12:47.298  player.cpp -- load_states  339  open database successfully!
+2022-04-25 20:12:47.298  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-25 20:12:55.556  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-25 20:12:55.558  functions.cpp  151  find available subtitle!
+2022-04-25 20:12:55.562  functions.cpp -- extract_pcm()  494  C:/Users/riben/Desktop/player/temp/1-课程介绍.pcm
+2022-04-25 20:13:56.114  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:13:56.135  functions.cpp -- update_database()  389  updated!
+2022-04-25 20:13:56.137  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-25 20:13:56.148  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:13:56.150  functions.cpp -- update_database()  389  updated!
+2022-04-25 20:14:00.530  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-25 20:14:00.530  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-25 20:14:00.536  player.cpp -- load_states  339  open database successfully!
+2022-04-25 20:14:00.536  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-25 20:14:06.077  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-25 20:14:06.079  functions.cpp  151  find available subtitle!
+2022-04-25 20:14:06.085  functions.cpp -- extract_pcm()  494  C:/Users/riben/Desktop/player/temp/1-课程介绍.pcm
+2022-04-25 20:16:02.213  functions.cpp  145  vtt
+2022-04-25 20:16:02.215  functions.cpp  156  subtitle file not exist
+2022-04-25 20:16:02.215  functions.cpp -- extract_pcm()  494  C:/Users/riben/Desktop/player/temp/pcm
+2022-04-25 20:18:17.891  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-25 20:18:17.892  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-25 20:18:17.893  player.cpp -- load_states  339  open database successfully!
+2022-04-25 20:18:17.894  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-25 20:18:23.859  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-25 20:18:23.859  functions.cpp  151  find available subtitle!
+2022-04-25 20:18:23.861  functions.cpp -- extract_pcm()  494  C:/Users/riben/Desktop/player/temp/1-课程介绍.pcm
+2022-04-25 20:18:36.848  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:18:36.858  functions.cpp -- update_database()  389  updated!
+2022-04-25 20:18:36.859  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-25 20:18:36.870  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:18:36.872  functions.cpp -- update_database()  389  updated!
+2022-04-25 20:20:20.166  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-25 20:20:20.169  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-25 20:20:20.172  player.cpp -- load_states  339  open database successfully!
+2022-04-25 20:20:20.172  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-25 20:20:26.914  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-25 20:20:26.916  functions.cpp  151  find available subtitle!
+2022-04-25 20:20:26.922  functions.cpp -- extract_pcm()  494  C:/Users/riben/Desktop/player/temp/1-课程介绍.pcm
+2022-04-25 20:21:23.553  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:21:23.573  functions.cpp -- update_database()  389  updated!
+2022-04-25 20:21:23.574  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-25 20:21:23.588  functions.cpp -- update_database()  359  database open successfully
+2022-04-25 20:21:23.589  functions.cpp -- update_database()  389  updated!
+2022-04-26 16:29:11.743  player.cpp -- void Player::load_location()  336  database opened successfully!
+2022-04-26 16:29:11.743  palyer.cpp -- void Player::load_location()  367   -- successfully load data from database
+2022-04-26 16:29:11.743  player.cpp -- load_states  339  open database successfully!
+2022-04-26 16:29:11.743  player.cpp -- load_states  359  m_subtitle_splitter_state:AAAA/wAAAAEAAAACAAACHQAAAAAB/////wEAAAACAA==    m_playlist_splitter_state:AAAA/wAAAAEAAAACAAADjQAAAAAB/////wEAAAABAA==
+2022-04-26 16:33:30.676  functions.cpp  145  C:/Users/riben/Desktop/xiaoji/1-课程介绍.vtt
+2022-04-26 16:33:30.676  functions.cpp  151  find available subtitle!
+2022-04-26 16:35:18.532  functions.cpp -- update_database()  359  database open successfully
+2022-04-26 16:35:18.535  functions.cpp -- update_database()  389  updated!
+2022-04-26 16:35:18.535  player.cpp -- Player::closeEvent  775  update database successfully!
+2022-04-26 16:35:18.537  functions.cpp -- update_database()  359  database open successfully
+2022-04-26 16:35:18.537  functions.cpp -- update_database()  389  updated!

@@ -662,7 +662,7 @@ void Player::playlistPositionChanged(int currentItem)
 
     generate_subtitle(  (m_playlist->currentMedia()).toLocalFile(), m_subtitle_stringlist_primary, m_subtitle_stringlist_adjusted, m_subtitle_moment_time_list, m_subtitle_moment_content_list);
     // emit signal to timeline window, to generate the sonic waveform pixmap
-    emit generate_pixmap((m_playlist->currentMedia()).toLocalFile());
+    // emit generate_pixmap((m_playlist->currentMedia()).toLocalFile());
 }
 
 void Player::seek(int mseconds)

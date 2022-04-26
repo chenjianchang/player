@@ -33,6 +33,7 @@ SOURCES = main.cpp \
     editor.cpp \
     functions.cpp \
     help.cpp \
+    my_ffmpeg.cpp \
     player.cpp \
     playercontrols.cpp \
     playlistmodel.cpp \

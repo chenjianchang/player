@@ -489,7 +489,8 @@ int draw_audio_picture(QString pcm_path, qint16 w, qint16 h, qreal d){
             pix.fill(Qt::transparent);
             QPainter painter(&pix);
             painter.setRenderHint(QPainter::Antialiasing);
-            painter.setPen(Qt::blue);
+            painter.setPen(QColor(250,0,250,10));
+            qDebug() << "pen width:" << painter.pen().width();
 
             for(int k = 0; k < w; k++){
                 x += 1;

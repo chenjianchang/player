@@ -71,7 +71,8 @@ timeline::timeline(){
     connect(this, &timeline::send_info_to_sonic_waveform_frame,
             this->sonic_waveform_frame, &sonic_waveform::receive_info_from_timeline);
 
-
+    // test block
+    getAudioInfo("C:/Users/riben/Desktop/xiaoji/1-课程介绍.mp4");
 }
 
 void timeline::resizeEvent(QResizeEvent *event){
